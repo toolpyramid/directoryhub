@@ -1,0 +1,71 @@
+.features-default {
+  background: #F1F4F7;
+  padding: 50px 0 20px 0;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__item-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 115px;
+
+    .icon {
+      font-size: 50px;
+      color: $features-icon-primary-color;
+    }
+
+    &.ruby-icon {
+      line-height: 120px;
+    }
+  }
+
+  &__item-heading {
+    margin: 25px 0 0 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &__item-description {
+    margin-top: 20px;
+    color: #888;
+    font-family: $text-font-name;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+@include mq(tablet-wide, max) {
+  .features-default {
+    &__item {
+      width: 40%;
+    }
+  }
+}
+
+@include mq(tablet, max) {
+  .features-default {
+    &__item {
+      width: 100%;
+    }
+  }
+}

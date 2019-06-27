@@ -1,0 +1,164 @@
+.candidate-resume {
+  &__header {
+    background: #F1F4F7;
+    padding: 36px 0;
+  }
+
+  &__header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info-wrap {
+    display: flex;
+  }
+
+  &__info-extras {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #888888;
+    font-size: 17px;
+  }
+
+  &__body {
+    margin-top: 20px;
+    margin-bottom: 88px;
+  }
+
+  &__info-name {
+    margin-bottom: 8px;
+  }
+
+  &__info-occupation {
+    font-size: 30px;
+    font-family: $font-name;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 12px;
+  }
+
+  &__info-extras-item {
+    .icon {
+      font-size: 16px;
+      line-height: 16px;
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    + .candidate-resume__info-extras-item {
+      margin-left: 20px;
+    }
+
+    a,
+    a:hover {
+      color: #888;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(#888, .8);
+      line-height: 15px;
+    }
+  }
+
+  &__tags {
+    margin-bottom: 50px;
+
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 7px 8px;
+      background: #888;
+
+      + .badge {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__body-item-timeline {
+    margin-top: 27px;
+    margin-left: 5px;
+  }
+
+  &__body-item-timeline-time {
+    display: block;
+    color: #888888;
+    margin-bottom: 10px;
+    top: -10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid rgba(#888, .5);
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      position: absolute;
+      left: -25px;
+      top: 8px;
+    }
+  }
+
+  &__body-item-timeline-heading {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__body-item-timeline-description {
+    font-size: 16px;
+  }
+
+  &__body-item-timeline-item {
+    border-left: 1px solid rgba(#888, .25);
+    padding-left: 20px;
+    padding-bottom: 40px;
+
+    &:last-child {
+      border-color: transparent;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .candidate-resume {
+    &__header-wrap,
+    &__info-wrap {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__info {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include mq(tablet-small, max) {
+  .candidate-resume {
+    &__info-extras {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__info-extras-item {
+      margin-left: 0;
+
+      + .candidate-resume__info-extras-item {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{% extends 'html/uikit.html' %}
+
+{% block body %}
+{% include "html/uikit/hero_preview.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            {% include "html/uikit/menu_preview.html" %}
+        </div>
+        <div class="col-lg-10">
+            {% include "html/uikit/colors_preview.html" %}
+            {% include "html/uikit/tables.html" %}
+            {% include "html/uikit/buttons.html" %}
+            {% include "html/uikit/forms.html" %}
+            {% include "html/uikit/form_extras.html" %}
+            {% include "html/uikit/alerts.html" %}
+            {% include "html/uikit/progress_bars.html" %}
+            {% include "html/uikit/popovers.html" %}
+            {% include "html/uikit/tooltips.html" %}
+            {% include "html/uikit/badges.html" %}
+            {% include "html/uikit/navbar.html" %}
+            {% include "html/uikit/navigation.html" %}
+
+            <div id="breadcrumbs-header" class="row mb-5">
+                <div class="col-lg-4">
+                    {% include "html/uikit/breadcrumbs.html" %}
+                </div>
+                <div class="col-lg-4">
+                    {% include "html/uikit/pagination.html" %}
+                </div>
+                <div class="col-lg-4">
+                    {% include "html/uikit/media_object.html" %}
+                </div>
+            </div>
+
+            {% include "html/uikit/modal.html" %}
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    {% include "html/uikit/collapse.html" %}
+                </div>
+                <div class="col-lg-6">
+                    {% include "html/uikit/carousel.html" %}
+                </div>
+            </div>
+
+            {% include "html/uikit/typography.html" %}
+            {% include "html/uikit/cards.html" %}
+            {% include "html/uikit/plugins_nouislider.html" %}
+            {% include "html/uikit/plugins_select2.html" %}
+            {% include "html/uikit/tags.html" %}
+            {% include "html/uikit/jumbotron.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+<script type="application/javascript" src="js/uikit.js"></script>
+{% endblock %}

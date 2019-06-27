@@ -1,0 +1,16 @@
+.header-default--properties {
+  .header-default__menu {
+    .navbar-nav {
+      .nav-item {
+        + .nav-item {
+          margin-left: 8px;
+        }
+      }
+
+      .nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}

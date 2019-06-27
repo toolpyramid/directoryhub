@@ -1,0 +1,23 @@
+{% extends 'html/master.html' %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="vendors/select2/css/select2.min.css">
+<link rel="stylesheet" type="text/css" href="css/vendors/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="vendors/leaflet/leaflet.css">
+{% endblock %}
+
+{% block body %}
+
+{% include "html/header/master.html" %}
+{% include "html/master/post-application.html" %}
+{% include "html/footer/master.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+<script src="vendors/leaflet/leaflet.js"></script>
+<script src="vendors/select2/js/select2.min.js"></script>
+<script src="js/master-post-application.js"></script>
+{% endblock %}

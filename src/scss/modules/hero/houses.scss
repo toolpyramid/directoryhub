@@ -1,0 +1,150 @@
+.hero-houses {
+  padding: 44px 0 30px 0;
+
+  &__brand,
+  &__brand:hover {
+    font-family: $font-name;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #222;
+    text-transform: uppercase;
+    margin-right: 56px;
+    text-decoration: none;
+
+    .colored {
+      color: $header-link-primary-color;
+    }
+  }
+
+  &__brand-description {
+    font-size: 17px;
+    color: #000;
+    position: relative;
+    top: 2px;
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone {
+    font-size: 21px;
+    color: #000;
+    margin-right: 20px;
+
+    .icon {
+      position: relative;
+      margin-right: 2px;
+      font-size: 14px;
+      top: -1px;
+      color: $color-primary;
+    }
+  }
+  
+  &__call-btn {
+    color: $color-primary;
+    padding: 9px 20px;
+  }
+
+  &__breadcrumb {
+    margin-top: 26px;
+    margin-bottom: 13px;
+
+    .breadcrumb-item {
+      color: #939daa;
+
+      &:before {
+        color: #939daa;
+      }
+    }
+
+    a {
+      color: #939daa;
+      font-size: 17px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 36px;
+    margin-bottom: 13px;
+    font-weight: 300;
+  }
+  
+  &__description {
+    font-size: 17px;
+    color: #000;
+  }
+
+  &__sort-by {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+
+    .btn-group {
+      margin-left: 20px;
+      position: relative;
+      top: 1px;
+    }
+    
+    .btn {
+      background: #fff;
+      border: 1px solid #d3d9dd;
+      color: #939daa;
+      font-size: 14px;
+      padding: 9px 20px;
+
+      &:hover,
+      &.active {
+        background-color: #e9ecf1;
+        color: #7b8694;
+      }
+    }
+  }
+
+  &__sort-by-order {
+    font-size: 22px;
+    line-height: 10px;
+    position: relative;
+    top: 1px;
+  }
+}
+
+@include mq(screen-lg, max) {
+  .hero-houses {
+    &__callback {
+      margin-top: 30px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__sort-by {
+      flex-direction: column;
+
+      .btn-group {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+
+    &__breadcrumb {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumb-item {
+      white-space: nowrap;
+    }
+
+    &__heading,
+    &__description {
+      text-align: center;
+    }
+  }
+}

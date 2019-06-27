@@ -1,0 +1,132 @@
+.close {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.6rem;
+  text-shadow: none;
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+.alert-link {
+  font-weight: 500;
+}
+
+.alert {
+  border-radius: $border-radius;
+  padding: 1.2rem;
+  font-size: 1rem;
+}
+
+.alert-primary {
+  background-color: #F1DEEE;
+  border-color: #F1DEEE;
+  color: $color-primary;
+
+  .alert-link {
+    color: darken($color-primary, 10%);
+  }
+}
+
+.alert-secondary {
+  background-color: #eaeded;
+  border-color: #eaeded;
+  color: #333;
+
+  .alert-link {
+    color: #000;
+  }
+}
+
+.alert-info {
+  background-color: #dcf3fa;
+  border-color: #dcf3fa;
+  color: #30a3c7;
+
+  .alert-link {
+    color: darken(#30a3c7, 10%);
+  }
+}
+
+.alert-success {
+  background: #ECF6E5;
+  border-color: #ECF6E5;
+  color: #69a53b;
+
+  .alert-link {
+    color: darken(#69a53b, 10%);
+  }
+}
+
+.alert-warning {
+  background: #FEF5E3;
+  border-color: #FEF5E3;
+  color: #d19927;
+
+  .alert-link {
+    color: darken(#d19927, 10%);
+  }
+}
+
+.alert-danger {
+  background: #FCE7E6;
+  border-color: #FCE7E6;
+  color: $color-danger;
+
+  .alert-link {
+    color: darken($color-danger, 10%);
+  }
+}
+
+[class*="alert-solid-"] {
+  color: #fff;
+
+  hr {
+    border-top-color: rgba(255, 255, 255, .15);
+  }
+
+  .alert-link {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .close {
+    color: #fff;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.alert-solid-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.alert-solid-secondary {
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+}
+
+.alert-solid-success {
+  background-color: $color-success;
+  border-color: $color-success;
+}
+
+.alert-solid-info {
+  background-color: $color-info;
+  border-color: $color-info;
+}
+
+.alert-solid-warning {
+  background-color: $color-warning;
+  border-color: $color-warning;
+}
+
+.alert-solid-danger {
+  background-color: $color-danger;
+  border-color: $color-danger;
+}

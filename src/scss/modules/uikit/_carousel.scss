@@ -1,0 +1,40 @@
+.carousel-inner {
+  border-radius: $border-radius;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  color: #fff;
+  background-color: rgba(#2f2929, .7);
+  text-align: left;
+  font-size: 1rem;
+  padding: 1.333rem;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 1.5rem;
+  bottom: auto;
+  top: 1.5rem;
+  left: 0;
+  justify-content: flex-end;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: auto;
+}

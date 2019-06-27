@@ -1,0 +1,79 @@
+.footer-default--houses {
+  background-color: #2a2c32;
+  padding: 34px 0 20px 0;
+  font-size: 17px;
+  color: rgba(#fff, .5);
+
+  .footer-default__heading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .footer-default__copyright,
+  .footer-default__follow-us-text {
+    font-size: 17px;
+    color: rgba(#fff, .5);
+  }
+
+  .footer-default__follow-us-text {
+    margin-right: 125px;
+    color: #fff;
+  }
+
+  .footer-default__nav {
+    margin-bottom: 40px;
+
+    a {
+      font-size: 19px;
+      display: inline-block;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .footer-default__contact-row {
+    margin-bottom: 40px;
+  }
+
+  hr {
+    margin: 12px 0 20px 0;
+  }
+
+  li {
+    + li {
+      margin-top: 8px;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .footer-default--houses {
+    text-align: center;
+
+    .footer-default__follow-us-text {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq(tablet, max) {
+  .footer-default--houses {
+    .footer-default__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        margin: 0;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

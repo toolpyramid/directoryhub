@@ -1,0 +1,169 @@
+.hero-booking-places {
+  min-height: 500px;
+  background: url("../images/hero/places.png") top center no-repeat;
+  background-size: cover;
+  padding-top: 117px;
+  padding-bottom: 158px;
+  color: #fff;
+
+  &-heading {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &-form {
+    display: flex;
+    background: #fff;
+    border-radius: 3px;
+
+    &--location-opened {
+      border-bottom-left-radius: 0;
+    }
+
+    &-field {
+      flex-grow: 1;
+      padding: 13px 20px 5px 20px;
+      border-right: 1px solid rgba(#000, .1);
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .heading {
+        font-size: 20px;
+        color: $color-primary;
+        font-weight: 300;
+        line-height: 20px;
+      }
+
+      .form-control {
+        padding: 5px 0;
+        font-size: 20px;
+        color: #000;
+        font-weight: 300;
+        line-height: 28px;
+        border: none;
+        background: transparent;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    &-search-btn {
+      width: 76px;
+      border-radius: 2px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+
+      .icon {
+        font-size: 24px;
+        line-height: 24px;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    &-guests {
+      width: 270px;
+      position: relative;
+
+      .btn {
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+      }
+
+      .dropdown-menu {
+        min-width: 264px;
+      }
+    }
+  }
+}
+
+.booking-places-page {
+  .flexdatalist-results {
+    margin-top: 5px;
+    margin-left: -20px;
+    width: 276px !important; /* Redefine inline styles */
+  }
+
+  .flatpickr-calendar {
+    margin-left: -20px;
+
+    &:before {
+      border-width: 10px;
+    }
+
+    &:after {
+      border-width: 9px;
+      margin: 0 -4px;
+    }
+
+    &.arrowTop {
+      margin-top: 20px;
+    }
+
+    border-radius: 2px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+    .flatpickr-month {
+      height: 44px;
+      border-bottom: 1px solid rgba(#000, .1);
+      margin-bottom: 10px;
+    }
+
+    .flatpickr-current-month {
+      padding: 9.16px 0 0 0;
+
+      span.cur-month {
+        font-weight: 500;
+      }
+    }
+
+    .flatpickr-prev-month,
+    .flatpickr-next-month {
+      padding: 16px calc(3.57% - 1.5px);
+    }
+
+    .cur-month {
+      font-weight: 400;
+    }
+
+    .flatpickr-weekday {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .flatpickr-day {
+      font-size: 15px;
+      color: #000;
+      border-color: transparent;
+
+      &.prevMonthDay,
+      &.nextMonthDay {
+        color: #888888;
+        border-color: transparent;
+      }
+
+      &:not(.selected):not(.today):hover {
+        background: rgba($color-primary, .1);
+      }
+
+      &.selected {
+        color: #fff;
+        background: $color-primary;
+        border-color: $color-primary;
+      }
+    }
+  }
+}

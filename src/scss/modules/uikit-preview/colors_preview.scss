@@ -1,0 +1,383 @@
+.color-preview {
+  height: 100px;
+  color: #fff;
+
+  &-default, &-active {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-default {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  &-active {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.color-preview-primary {
+  .color-preview {
+    &-default {
+      background: $color-primary;
+    }
+
+    &-active {
+      background: $color-primary-active;
+    }
+  }
+}
+
+.color-preview-info {
+  .color-preview {
+    &-default {
+      background: $color-info;
+    }
+
+    &-active {
+      background: $color-info-active;
+    }
+  }
+}
+
+.color-preview-success {
+  .color-preview {
+    &-default {
+      background: $color-success;
+    }
+
+    &-active {
+      background: $color-success-active;
+    }
+  }
+}
+
+.color-preview-warning {
+  .color-preview {
+    &-default {
+      background: $color-warning;
+    }
+
+    &-active {
+      background: $color-warning-active;
+    }
+  }
+}
+
+.color-preview-danger {
+  .color-preview {
+    &-default {
+      background: $color-danger;
+    }
+
+    &-active {
+      background: $color-danger-active;
+    }
+  }
+}
+
+.color-preview-secondary {
+  .color-preview {
+    &-default {
+      background: $color-secondary;
+    }
+
+    &-active {
+      background: $color-secondary-active;
+    }
+  }
+}
+
+.color-preview-cinnabar {
+  .color-preview {
+    &-default {
+      background: $color-cinnabar;
+    }
+
+    &-active {
+      background: $color-cinnabar-active;
+    }
+  }
+}
+
+.color-preview-zest {
+  .color-preview {
+    &-default {
+      background: $color-zest;
+    }
+
+    &-active {
+      background: $color-zest-active;
+    }
+  }
+}
+
+.color-preview-supernova {
+  .color-preview {
+    &-default {
+      background: $color-supernova;
+    }
+
+    &-active {
+      background: $color-supernova-active;
+    }
+  }
+}
+
+.color-preview-pavlova {
+  .color-preview {
+    &-default {
+      background: $color-pavlova;
+    }
+
+    &-active {
+      background: $color-pavlova-active;
+    }
+  }
+}
+
+.color-preview-pickled-bluewood {
+  .color-preview {
+    &-default {
+      background: $color-pickled-bluewood;
+    }
+
+    &-active {
+      background: $color-pickled-bluewood-active;
+    }
+  }
+}
+
+.color-preview-mine-shaft {
+  .color-preview {
+    &-default {
+      background: $color-mine-shaft;
+    }
+
+    &-active {
+      background: $color-mine-shaft-active;
+    }
+  }
+}
+
+.color-preview-wisteria {
+  .color-preview {
+    &-default {
+      background: $color-wisteria;
+    }
+
+    &-active {
+      background: $color-wisteria-active;
+    }
+  }
+}
+
+.color-preview-ming {
+  .color-preview {
+    &-default {
+      background: $color-ming;
+    }
+
+    &-active {
+      background: $color-ming-active;
+    }
+  }
+}
+
+.color-preview-curious-blue {
+  .color-preview {
+    &-default {
+      background: $color-curious-blue;
+    }
+
+    &-active {
+      background: $color-curious-blue-active;
+    }
+  }
+}
+
+.color-preview-shamrock {
+  .color-preview {
+    &-default {
+      background: $color-shamrock;
+    }
+
+    &-active {
+      background: $color-shamrock-active;
+    }
+  }
+}
+
+.color-preview-mountain-meadow {
+  .color-preview {
+    &-default {
+      background: $color-mountain-meadow;
+    }
+
+    &-active {
+      background: $color-mountain-meadow-active;
+    }
+  }
+}
+
+.color-preview-porcelain {
+  color: #000;
+
+  .color-preview {
+    &-default {
+      background: $color-porcelain;
+    }
+
+    &-active {
+      background: $color-porcelain-active;
+    }
+  }
+}
+
+.color-preview-cascade {
+  .color-preview {
+    &-default {
+      background: $color-cascade;
+    }
+
+    &-active {
+      background: $color-cascade-active;
+    }
+  }
+}
+
+.color-preview-killarney {
+  .color-preview {
+    &-default {
+      background: $color-killarney;
+    }
+
+    &-active {
+      background: $color-killarney-active;
+    }
+  }
+}
+
+.color-preview-blue-marguerite {
+  .color-preview {
+    &-default {
+      background: $color-blue-marguerite;
+    }
+
+    &-active {
+      background: $color-blue-marguerite-active;
+    }
+  }
+}
+
+.color-preview-millbrook {
+  .color-preview {
+    &-default {
+      background: $color-millbrook;
+    }
+
+    &-active {
+      background: $color-millbrook-active;
+    }
+  }
+}
+
+.color-preview-cosmic {
+  .color-preview {
+    &-default {
+      background: $color-cosmic;
+    }
+
+    &-active {
+      background: $color-cosmic-active;
+    }
+  }
+}
+
+.color-preview-flory {
+  .color-preview {
+    &-default {
+      background: $color-flory;
+    }
+
+    &-active {
+      background: $color-flory-active;
+    }
+  }
+}
+
+.color-preview-atlantis {
+  .color-preview {
+    &-default {
+      background: $color-atlantis;
+    }
+
+    &-active {
+      background: $color-atlantis-active;
+    }
+  }
+}
+
+.color-preview-persian-pink {
+  .color-preview {
+    &-default {
+      background: $color-persian-pink;
+    }
+
+    &-active {
+      background: $color-persian-pink-active;
+    }
+  }
+}
+
+.color-preview-nutmeg {
+  .color-preview {
+    &-default {
+      background: $color-nutmeg;
+    }
+
+    &-active {
+      background: $color-nutmeg-active;
+    }
+  }
+}
+
+.color-preview-donkey-brown {
+  .color-preview {
+    &-default {
+      background: $color-donkey-brown;
+    }
+
+    &-active {
+      background: $color-donkey-brown-active;
+    }
+  }
+}
+
+.color-preview-perano {
+  .color-preview {
+    &-default {
+      background: $color-perano;
+    }
+
+    &-active {
+      background: $color-perano-active;
+    }
+  }
+}
+
+.color-preview-kashmir-blue {
+  .color-preview {
+    &-default {
+      background: $color-kashmir-blue;
+    }
+
+    &-active {
+      background: $color-kashmir-blue-active;
+    }
+  }
+}

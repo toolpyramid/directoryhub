@@ -1,0 +1,159 @@
+.listing-recent-jobs {
+  padding: 45px 0 50px 0;
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  &__items {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    .table {
+      border: none;
+      margin: 0;
+    }
+
+    tr {
+      td {
+        vertical-align: middle;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+      
+      &:hover {
+        /*outline: thin solid $color-primary;*/
+
+        td {
+          background: #f1f4f7;
+        }
+      }
+    }
+  }
+
+  &__item-company {
+    width: 1px;
+  }
+
+  &__item-info {
+    width: 100px;
+  }
+
+  &__item-title {
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  &__item-description {
+    margin-top: 14px;
+    color: #000;
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__item-location {
+    color: #999999;
+    font-size: 14px;
+    width: 150px;
+  }
+
+  &__item-location-icon {
+    color: #999999;
+    position: relative;
+    top: 2px;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 2px;
+  }
+
+  &__item-type {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 8px;
+    margin-bottom: 7px;
+  }
+
+  &__item-created {
+    color: #999999;
+    font-size: 14px;
+  }
+
+  &__spotlight {
+    position: relative;
+    border-radius: 4px;
+
+    &-meta {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-location {
+      font-size: 14px;
+      color: #999;
+    }
+
+    &-company-logo {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 179px;
+      align-items: center;
+    }
+
+    .card-title {
+      font-size: 19px;
+    }
+
+    .card-img-top {
+      position: absolute;
+      height: 179px;
+      margin-top: -2px;
+      left: -1px;
+      width: calc(100% + 2px);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    .card-text {
+      margin-top: 15px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 22px;
+    }
+
+    .card-block {
+      margin-top: 179px;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listing-recent-jobs {
+    &__items {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include mq(phablet, max) {
+  .listing-recent-jobs {
+    &__heading {
+      font-size: 30px;
+    }
+  }
+}

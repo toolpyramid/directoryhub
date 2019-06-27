@@ -1,0 +1,20 @@
+{% extends 'html/base.html' %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+{% include "html/header/simple-light.html" %}
+{% include "html/header/houses.html" %}
+{% include "html/hero/houses-projects.html" %}
+{% include "html/listings/houses-projects.html" %}
+{% include "html/news/houses-projects.html" %}
+{% include "html/footer/houses-projects.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+{% endblock %}

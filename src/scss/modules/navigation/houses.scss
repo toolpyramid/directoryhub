@@ -1,0 +1,34 @@
+.nav-houses {
+  background-color: #f1f4f7;
+  padding: 17px 0 13px 0;
+
+  &__nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-link,
+  .nav-link:hover {
+    font-size: 19px;
+    margin-bottom: 9px;
+    padding: 0;
+    color: #0075c0 !important;
+    text-decoration: none;
+    border-bottom: 1px solid #0075c0;
+    line-height: 24px;
+
+    &::before {
+      display: none;
+    }
+
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: #000 !important;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.listing-houses-projects {
+  padding: 45px 0 20px 0;
+
+  &__heading {
+    color: #222222;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  &__description {
+    color: #222222;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    min-height: 270px;
+    margin-bottom: 30px;
+  }
+
+  &__item-image {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  &__item-gradient {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(#321e2f, .7), transparent);
+    padding: 22px;
+  }
+  
+  &__item-name {
+    position: absolute;
+    bottom: 22px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+
+    .icon {
+      font-size: 10px;
+      display: inline-flex;
+      margin-left: 4px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background: #fff;
+      color: $color-primary;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -2px;
+    }
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listing-houses-projects {
+    &__heading {
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 50px;
+    }
+
+    &__description {
+      line-height: 22px;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,561 @@
+.btn {
+  font-family: $text-font-name;
+  border-radius: $border-radius;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  border-color: transparent;
+  /*padding: .65rem 1.333rem 0.7rem 1.333rem;*/
+  padding: 10.9px 20px;
+
+  + .dropdown-toggle-split {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  &.dropdown-toggle:not(.dropdown-toggle-split) {
+    &:after {
+      margin-left: 10px;
+    }
+  }
+
+  &-rounded {
+    border-radius: 1.9rem !important;
+  }
+}
+
+.btn-icon {
+  /*padding: 0.333rem 0.333rem 0.267rem 0.333rem;*/
+  display: inline-flex;
+  align-items: center;
+
+  .icon {
+    font-size: 22px;
+    height: auto;
+    line-height: 1rem;
+    margin-bottom: -1px;
+  }
+
+  &.btn-icon-left {
+    /*padding: 0.333rem 0.8rem;*/
+
+    .icon {
+      margin-left: -0.2rem;
+    }
+
+    .text {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &.btn-icon-right {
+    /*padding: 0.333rem 0.8rem;*/
+
+    .icon {
+      margin-right: -0.2rem;
+    }
+
+    .text {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.btn-outline-default {
+  background: #fff;
+  border-radius: $border-radius;
+  border: 1px solid $btn-default-border-color;
+  color: $btn-default-color;
+  font-weight: 300;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border: 1px solid $btn-primary-outline-hover-border-color;
+    color: $btn-default-outline-hover-color;
+  }
+}
+
+.btn-outline-white {
+  background: transparent;
+  border-radius: $border-radius;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 300;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.btn-outline-gray {
+  background: #fff;
+  border-radius: $border-radius;
+  border: 1px solid rgba(#000, .25);
+  color: $btn-default-color;
+  font-weight: 300;
+
+  &:hover,
+  &:active {
+    border: 1px solid $btn-primary-outline-hover-border-color;
+    color: $btn-default-outline-hover-color;
+  }
+}
+
+.btn-primary {
+  background: $color-primary;
+  color: #fff;
+  border-color: transparent;
+
+  &:hover {
+    background: $color-primary-hover;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $color-primary-active;
+    border-color: transparent;
+    color: #fff;
+  }
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-outline-primary {
+  color: $text-color;
+  border-color: $color-primary;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-primary;
+  }
+
+  &:hover {
+    background-color: $color-primary-hover;
+    border-color: $color-primary-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-primary;
+  }
+
+  &:active,
+  &.active {
+    background-color: $color-primary-active;
+    border-color: $color-primary-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-primary,
+  > .btn-outline-primary {
+    &.dropdown-toggle {
+      background-color: $color-primary-active;
+      border-color: $color-primary-active;
+    }
+  }
+}
+
+.btn-secondary {
+  background: $color-secondary;
+  color: #fff;
+  border-color: transparent;
+
+  &:focus {
+    background: $color-secondary;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  &:hover {
+    background: $color-secondary-hover;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $color-secondary-active;
+    border-color: transparent;
+    color: #fff;
+  }
+}
+
+.btn-secondary-light {
+  background: $color-secondary-light;
+  color: $text-color;
+  border-color: transparent;
+
+  &:hover {
+    background: $color-secondary-light-hover;
+    color: $text-color;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $color-secondary-light-active;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: $text-color;
+  }
+}
+
+.btn-outline-secondary {
+  color: $text-color;
+  border-color: $color-secondary;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-secondary;
+  }
+
+  &:hover {
+    background-color: $color-secondary-hover;
+    border-color: $color-secondary-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-secondary;
+  }
+
+  &:active,
+  &.active {
+    background-color: $color-secondary-active;
+    border-color: $color-secondary-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-secondary,
+  > .btn-outline-secondary {
+    &.dropdown-toggle {
+      background-color: $color-secondary-active;
+      border-color: $color-secondary-active;
+    }
+  }
+
+  > .btn-secondary {
+    &.dropdown-toggle {
+      color: #fff;
+    }
+  }
+}
+
+.btn-info {
+  background: $btn-info-bg-color;
+  color: #fff;
+  border-color: transparent;
+
+  &:hover {
+    background: $btn-info-hover-bg-color;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $btn-info-active-bg-color;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-outline-info {
+  color: $text-color;
+  border-color: $color-info;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-info;
+  }
+
+  &:hover {
+    background-color: $color-info-hover;
+    border-color: $color-info-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-info;
+  }
+
+  &:active,
+  &.active {
+    background-color: $color-info-active;
+    border-color: $color-info-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-info,
+  > .btn-outline-info {
+    &.dropdown-toggle {
+      background-color: $color-info-active;
+      border-color: $color-info-active;
+    }
+  }
+}
+
+.btn-success {
+  background: $btn-success-bg-color;
+  color: $btn-success-color;
+  border-color: transparent;
+
+  &:hover {
+    background: $btn-success-hover-bg-color;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $btn-success-active-bg-color;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-outline-success {
+  color: $text-color;
+  border-color: $color-success;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-success;
+  }
+
+  &:hover {
+    background-color: $color-success-hover;
+    border-color: $color-success-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-success;
+  }
+
+  &:active, &.active {
+    background-color: $color-success-active;
+    border-color: $color-success-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-success,
+  > .btn-outline-success {
+    &.dropdown-toggle {
+      background-color: $color-success-active;
+      border-color: $color-success-active;
+    }
+  }
+}
+
+.btn-warning {
+  background: $btn-warning-bg-color;
+  color: $btn-warning-color;
+  border-color: transparent;
+
+  &:hover {
+    background: $btn-warning-hover-bg-color;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $btn-warning-active-bg-color;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-outline-warning {
+  color: $text-color;
+  border-color: $color-warning;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-warning;
+  }
+
+  &:hover {
+    background-color: $color-warning-hover;
+    border-color: $color-warning-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-warning;
+  }
+
+  &:active, &.active {
+    background-color: $color-warning-active;
+    border-color: $color-warning-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-warning,
+  > .btn-outline-warning {
+    &.dropdown-toggle {
+      background-color: $color-warning-active;
+      border-color: $color-warning-active;
+    }
+  }
+}
+
+.btn-danger {
+  background: $btn-danger-bg-color;
+  color: $btn-danger-color;
+  border-color: transparent;
+
+  &:hover {
+    background: $btn-danger-hover-bg-color;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $btn-danger-active-bg-color;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-outline-danger {
+  color: $text-color;
+  border-color: $color-danger;
+
+  &:focus {
+    color: $text-color;
+    border-color: $color-danger;
+  }
+
+  &:hover {
+    background-color: $color-danger-hover;
+    border-color: $color-danger-hover;
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color-danger;
+  }
+
+  &:active,
+  &.active {
+    background-color: $color-danger-active;
+    border-color: $color-danger-active;
+    color: #fff;
+  }
+}
+
+.show {
+  > .btn-danger,
+  > .btn-outline-danger {
+    &.dropdown-toggle {
+      background-color: $color-danger-active;
+      border-color: $color-danger-active;
+    }
+  }
+}
+
+.btn-supernova {
+  background: $color-supernova;
+  color: $text-color;
+  border-color: transparent;
+
+  &:hover {
+    color: $text-color;
+    background: $color-supernova-hover;
+    border-color: transparent;
+  }
+
+  &:active,
+  &.active {
+    background: $color-supernova-active;
+    border-color: transparent;
+  }
+
+  &:focus {
+    color: $text-color;
+  }
+}
+
+.show {
+  > .btn-supernova,
+  > .btn-outline-supernova {
+    &.dropdown-toggle {
+      background-color: $color-supernova-active;
+      border-color: $color-supernova-active;
+    }
+  }
+}
+
+/* Buttons sizes */
+.btn-xs {
+  padding: .4rem 0.8rem;
+  font-size: .775rem;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: .73rem 1.75rem 0.85rem 1.75rem;
+  border-radius: $border-radius;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: .5rem 1rem;
+  border-radius: $border-radius;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: .4rem 0.85rem;
+  font-size: .775rem;
+}
+
+.btn-sm + .dropdown-toggle-split,
+.btn-group-sm > .btn + .dropdown-toggle-split {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+.btn-lg + .dropdown-toggle-split,
+.btn-group-lg > .btn + .dropdown-toggle-split {
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+}

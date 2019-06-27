@@ -1,0 +1,41 @@
+<div class="hero-booking-places">
+    <div class="container">
+        <h2 class="hero-booking-places-heading">
+            Rent unique places to stay from local hosts <br> in 190+ countries
+        </h2>
+        <form action="#" class="hero-booking-places-form">
+            <div class="hero-booking-places-form-location hero-booking-places-form-field">
+                <div class="heading">Location</div>
+                <input type="text"
+                       class="form-control flexdatalist flexdatalist"
+                       placeholder="Select location"
+                       data-data="data/countries.json"
+                       data-search-in="name"
+                       data-min-length="1"
+                       name="dm_country_name_suggestion">
+            </div>
+            <div class="hero-booking-places-form-check-in hero-booking-places-form-field">
+                <div class="heading">Check In</div>
+                <input class="form-control" placeholder="Select Date">
+            </div>
+            <div class="hero-booking-places-form-check-out hero-booking-places-form-field">
+                <div class="heading">Check Out</div>
+                <input class="form-control" placeholder="Select Date">
+            </div>
+            <div class="hero-booking-places-form-guests hero-booking-places-form-field">
+                <div class="heading">Guests</div>
+                <input class="form-control" value="1">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">&nbsp;</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">1 guest</a>
+                    <a class="dropdown-item" href="#">2 guests</a>
+                    <a class="dropdown-item" href="#">3 guests</a>
+                    <a class="dropdown-item" href="#">4 guests</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary hero-booking-places-form-search-btn">
+                <span class="icon iconfont-search-v2"></span>
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,184 @@
+.categories-places {
+  padding: 48px 40px 40px 40px;
+
+  &__heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+
+  &__heading-level-two {
+    text-align: center;
+    color: $text-color-light;
+    font-family: $text-font-name;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    + .categories-places__browse-all {
+      margin-top: 37px;
+    }
+  }
+
+  &__list-item {
+    min-width: 270px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    font-family: $font-name;
+    font-weight: 300;
+    flex: 1;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    + .categories-places__list-item {
+      margin-left: 30px;
+    }
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__list-item-amount {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 16px;
+    right: 16px;
+    border-radius: 50%;
+    background: $color-primary;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    padding-top: 1px;
+  }
+
+  &__list-item-icon {
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+  }
+
+  &__list-item-name {
+    border-bottom: 2px solid #fff;
+    line-height: 24px;
+  }
+
+  &__browse-all {
+    text-align: center;
+
+    .btn {
+      background: transparent;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 16px 17px 12px 17px;
+      border-radius: 0;
+      font-family: $font-name;
+      font-weight: 400;
+    }
+  }
+
+  &__list-stay {
+    background-image: url('../images/categories/places/stay.png');
+  }
+
+  &__list-eat-and-drink {
+    background-image: url('../images/categories/places/eat-and-drink.png');
+  }
+
+  &__list-visit {
+    background-image: url('../images/categories/places/visit.png');
+  }
+
+  &__list-shop {
+    background-image: url('../images/categories/places/shop.png');
+  }
+
+  &__list-sport {
+    background-image: url('../images/categories/places/sport.png');
+  }
+
+  &__list-real-estate {
+    background-image: url('../images/categories/places/real-estate.png');
+  }
+
+  &__list-auto {
+    background-image: url('../images/categories/places/auto.png');
+  }
+
+  &__list-medicine {
+    background-image: url('../images/categories/places/medicine.png');
+  }
+
+  &__list-finance {
+    background-image: url('../images/categories/places/finance.png');
+  }
+
+  &__list-services {
+    background-image: url('../images/categories/places/services.png');
+  }
+
+  &__list-beauty {
+    background-image: url('../images/categories/places/beauty.png');
+  }
+
+  &__list-leisure {
+    background-image: url('../images/categories/places/leisure.png');
+  }
+}
+
+@media (min-width: 995px) and (max-width: 1294px) {
+  .categories-places {
+    &__list-item {
+      + .categories-places__list-item {
+        &:nth-child(4) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 980px) {
+  .categories-places {
+    &__list-item {
+      + .categories-places__list-item {
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .categories-places {
+    &__list-item {
+      + .categories-places__list-item {
+        margin-left: 0;
+      }
+    }
+  }
+}

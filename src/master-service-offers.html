@@ -1,0 +1,21 @@
+{% extends 'html/master.html' %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="vendors/owl-carousel/assets/owl.carousel.min.css">
+{% endblock %}
+
+{% block body %}
+
+{% include "html/header/master.html" %}
+{% include "html/hero/leave-request.html" %}
+{% include "html/listings/offers-with-filter.html" %}
+{% include "html/footer/master.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/master-service-offers.js"></script>
+{% endblock %}

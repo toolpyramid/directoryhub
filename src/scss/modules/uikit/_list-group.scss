@@ -1,0 +1,41 @@
+.list-group-item-action {
+  color: $text-color;
+  font-size: 1rem;
+
+  .list-group-item-heading {
+    color: $text-color;
+  }
+
+  &:not(.disabled):focus,
+  &:not(.disabled):hover {
+    color: $text-color;
+    background-color: #f7f7f9;
+  }
+
+  &:not(.disabled):active {
+    color: $text-color;
+    background-color: #eceeef;
+  }
+}
+
+.list-group-item {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  &.active, &.active:hover, &.active:focus {
+    color: #fff;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+

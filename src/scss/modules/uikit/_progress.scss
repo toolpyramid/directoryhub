@@ -1,0 +1,35 @@
+.progress {
+  line-height: 1.25rem;
+  border-radius: $border-radius;
+  background-color: #f1f4f7;
+}
+
+.progress-bar {
+  height: 1.25rem;
+  color: #fff;
+  background-color: $color-primary;
+}
+
+.progress-bar-striped {
+  background-size: 1.25rem 1.25rem;
+}
+
+.progress-sm {
+  .progress-bar {
+    height: .75rem;
+  }
+
+  .progress-bar-striped {
+    background-size: .75rem .75rem;
+  }
+}
+
+.progress-xs {
+  .progress-bar {
+    height: .45rem;
+  }
+
+  .progress-bar-striped {
+    background-size: .55rem .55rem;
+  }
+}

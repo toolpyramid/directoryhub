@@ -1,0 +1,248 @@
+<form action="#" class="post-job">
+    <div class="container">
+        <h3 class="post-job__heading">Get your Job Done!</h3>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <p class="post-job__description">Post a Job for Free - Start receiving proposals within minutes</p>
+
+                <div class="row">
+                    <div class="col-xl-7">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="post-job__email">Email Address</label>
+                                    <input type="email" id="post-job__email" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="post-job__first-name">First Name</label>
+                                    <input type="text" id="post-job__first-name" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="post-job__last-name" class="d-flex justify-content-between">Last Name <span class="icon iconfont-help-outline"></span></label>
+                                    <input type="text" id="post-job__last-name" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1">
+                        <div class="post-job__auth-separator"><span>or</span></div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="post-job__auth">
+                            <div>
+                                <a href="#" class="btn btn-primary btn-block btn-icon btn-icon-left post-job__facebook-btn">
+                                    <span class="icon iconfont-facebook-solid"></span>
+                                    <span class="separator"></span>
+                                    <span class="text">Sign up with Facebook</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="btn btn-primary btn-block btn-icon btn-icon-left post-job__linkedin-btn">
+                                    <span class="icon iconfont-linkedin-solid"></span>
+                                    <span class="separator"></span>
+                                    <span class="text">Sign up with LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="post-job__task-title" class="d-flex justify-content-between">What do you need to get done? <span class="icon iconfont-help-outline"></span></label>
+                            <input type="email" id="post-job__task-title" class="form-control" placeholder="e.g. I need a professional website design">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="post-job__pick-category">Pick Category</label>
+                            <select id="post-job__pick-category" class="form-control selectable">
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="post-job__pick-category">&nbsp;</label>
+                            <select class="form-control selectable">
+                                <option value="">Subcategory</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="post-job__description" class="d-flex justify-content-between">What do you need to get done? <span class="icon iconfont-help-outline"></span></label>
+                            <textarea id="post-job__description" class="form-control" placeholder="Provide a more detailed description to help you get better proposals" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="post-job__work-type">Work Type</label>
+                            <select id="post-job__work-type" class="form-control selectable">
+                                <option value="">Fixed Price</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="post-job__work-type" class="d-flex justify-content-between">Currency <span class="icon iconfont-help-outline"></span></label>
+                            <select class="form-control selectable">
+                                <option value="">$ USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="post-job__work-type" class="d-flex justify-content-between">
+                                <span class="label-title">Budget <span>(optional)</span></span>
+                                <span class="icon iconfont-help-outline"></span>
+                            </label>
+                            <select class="form-control selectable">
+                                <option value="">Fixed Price</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row post-job__experience_level">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>Experience Level</label>
+                            <label class="radio-block">
+                                <input type="radio" name="post_job_experience_level" class="radio-block-radio" checked>
+                                <span class="radio-block-label">Experience level, $</span>
+                            </label>
+                            <small class="radio-block-description">Freelancers with lower rates and less experience.</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <label class="radio-block">
+                                <input type="radio" name="post_job_experience_level" class="radio-block-radio">
+                                <span class="radio-block-label">Intermediate, $$</span>
+                            </label>
+                            <small class="radio-block-description">Freelancers with lower rates and less experience.</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <label class="radio-block">
+                                <input type="radio" name="post_job_experience_level" class="radio-block-radio">
+                                <span class="radio-block-label">Expert, $$$</span>
+                            </label>
+                            <small class="radio-block-description">Freelancers with lower rates and less experience.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button data-toggle="collapse" data-target="#post-job__advanced-options" class="post-job__options-toggler link-underlined link-underlined--dashed link-underlined--endeavour">+ Show advanced options (location, visibility, duration, interview questions)</button>
+
+                <div class="collapse mt-4" id="post-job__advanced-options">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="post-job__work-type" class="d-flex justify-content-between">Where does the freelancer need to work from? <span class="icon iconfont-help-outline"></span></label>
+                                <select class="form-control selectable">
+                                    <option value="">Remotely (anywhere)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="post-job__work-type" class="d-flex justify-content-between">Visibility of job post</label>
+                                <div>
+                                    <label class="custom-control custom-radio">
+                                        <input name="radio" type="radio" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Public <span class="text-light">(All Seller can view the job post and send proposals)</span></span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom-control custom-radio">
+                                        <input name="radio" type="radio" class="custom-control-input" checked>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Private <span class="text-light">(Only Sellers that ypu speciffically invite can view the job post and send proposals)</span></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="post-job__job-duration"><span class="label-title">Estimated job duration <span>(optional)</span></span></label>
+                                <select id="post-job__job-duration" class="form-control selectable">
+                                    <option value="">Select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="form-group">
+                                <label for="post-job__interview-question" class="d-flex justify-content-between"><span class="label-title">Get to know your freelancer <span>(optional)</span></span> <span class="icon iconfont-help-outline"></span></label>
+                                <select id="post-job__interview-question" class="form-control selectable">
+                                    <option value="">Select an Interview Question</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <button data-toggle="collapse" class="link-underlined link-underlined--dashed link-underlined--endeavour">+ Add new question</button>
+                    </div>
+                    <div>
+                        <button data-toggle="collapse" data-target="#post-job__advanced-options" class="link-underlined link-underlined--dashed link-underlined--endeavour">+ Hide advanced options</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block post-job__submit-button">Post Job</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <p class="post-job__useful-tips-heading">Useful Tips</p>
+
+                <ul class="list-unstyled post-job__useful-tips-items">
+                    <li class="post-job__useful-tip">
+                        <span class="point">1.</span> Describe your Job in as much detail
+                        as you can comfortably reveal - it will increase the quality of proposals you receive and shorten the selection process.
+                    </li>
+                    <li class="post-job__useful-tip">
+                        <span class="point">2.</span> Upload as much relevant information (pictures, documents, specifications, links, etc) as possible to get a realistic quote.
+                    </li>
+                    <li class="post-job__useful-tip">
+                        <span class="point">3.</span> Match the experience level to your requirements – remember, you’re looking for the best you can afford, not the cheapest you can get.
+                    </li>
+                    <li class="post-job__useful-tip">
+                        <span class="point">4.</span> For more helpful tips, see our guide «<a href="#" class="link-endeavour">Hiring a freelancer</a>».
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</form>

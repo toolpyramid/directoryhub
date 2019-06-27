@@ -1,0 +1,35 @@
+.application-master {
+  min-height: 480px;
+  position: relative;
+  background: url("../images/master/application-bg.png") top center no-repeat;
+  background-size: cover;
+
+  &__heading {
+    margin-top: 110px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+
+  &__person {
+    margin-top: -52px;
+  }
+
+  &__describe-btn {
+    color: #2c2c2c;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+    background-color: rgba(255, 204, 0, 0);
+    background-image: linear-gradient(to top, #ffcd03 0%, #ffdb4b 100%);
+    padding: 17px 41px 15px 41px;
+    display: inline-block;
+    margin-top: 50px;
+    
+    &:hover {
+      color: #2c2c2c;
+    }
+  }
+}

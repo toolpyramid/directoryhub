@@ -1,0 +1,22 @@
+{% extends 'html/master.html' %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+{% include "html/header/master.html" %}
+{% include "html/hero/master.html" %}
+{% include "html/how-it-works/master.html" %}
+{% include "html/popular/jobs.html" %}
+{% include "html/features/master.html" %}
+{% include "html/application/master.html" %}
+{% include "html/listings/recent-orders.html" %}
+{% include "html/footer/master.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+{% endblock %}

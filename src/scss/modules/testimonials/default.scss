@@ -1,0 +1,49 @@
+.testimonials-default {
+  position: relative;
+  min-height: 447px;
+  background: url("../images/testimonials/users-grid.png") top center no-repeat;
+  background-size: cover;
+
+  &__carousel-item {
+    padding: 140px 50px 50px 50px;
+    text-align: center;
+    min-height: 447px;
+  }
+
+  &__item-message {
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 110px;
+    font-weight: 300;
+  }
+
+  &__item-author {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .owl-dots {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+
+    &.active {
+      background: #ffffff;
+    }
+
+    + .owl-dot {
+      margin-left: 28px;
+    }
+  }
+}

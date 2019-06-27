@@ -1,0 +1,160 @@
+$color-primary: #a3238e !default;
+$color-primary-hover: #971d81 !default;
+$color-primary-active: #8a1b7a !default;
+
+$color-primary-light: rgba(163,35,142,.8) !default;
+$color-primary-light-hover: rgba(163,35,142,.9) !default;
+$color-primary-light-active: rgb(163,35,142) !default;
+
+$color-secondary: #acb5ca !default;
+$color-secondary-hover: #a1aac2 !default;
+$color-secondary-active: #969fb9 !default;
+
+$color-secondary-light: #ecf0f1 !default;
+$color-secondary-light-hover: darken(#ecf0f1, 6%) !default;
+$color-secondary-light-active: darken(#ecf0f1, 12%) !default;
+
+$color-info: #4ec2e7 !default;
+$color-info-hover: #43b9e3 !default;
+$color-info-active: #3daad6 !default;
+
+$color-success: #82c250 !default;
+$color-success-hover: #75b945 !default;
+$color-success-active: #6baa41 !default;
+
+$color-warning: #f5ba42 !default;
+$color-warning-hover: #f4b139 !default;
+$color-warning-active: #dea336 !default;
+
+$color-danger: #ed5f55 !default;
+$color-danger-hover: #ea534a !default;
+$color-danger-active: #d94e47 !default;
+
+$color-cinnabar: #e74c3c;
+$color-cinnabar-active: #dc3125;
+
+$color-zest: #e67e22;
+$color-zest-active: #da5e13;
+
+$color-supernova: #ffcd02;
+$color-supernova-active: #ffb901;
+$color-supernova-hover: darken($color-supernova, 3%);
+
+$color-pavlova: #d5c295;
+$color-pavlova-active: #c3ab76;
+
+$color-pickled-bluewood: #34495e;
+$color-pickled-bluewood-active: #1f2f40;
+
+$color-mine-shaft: #2b2b2b;
+$color-mine-shaft-active: #191919;
+
+$color-wisteria: #9b59b6;
+$color-wisteria-active: #7c3c9c;
+
+$color-ming: #3a6f81;
+$color-ming-active: #1f2f40;
+
+$color-curious-blue: #3598dc;
+$color-curious-blue-active: #1f79cb;
+
+$color-shamrock: #2ecc71;
+$color-shamrock-active: #1bb751;
+
+$color-mountain-meadow: #1abc9c;
+$color-mountain-meadow-active: #0ea37d;
+
+$color-porcelain: #ecf0f1;
+$color-porcelain-active: #e3e9ea;
+
+$color-cascade: #95a5a6;
+$color-cascade-active: #768889;
+
+$color-killarney: #345f41;
+$color-killarney-active: #1f4129;
+
+$color-blue-marguerite: #745ec5;
+$color-blue-marguerite-active: #5440ae;
+
+$color-millbrook: #5e4534;
+$color-millbrook-active: #402c1f;
+
+$color-cosmic: #5e345e;
+$color-cosmic-active: #401f40;
+
+$color-flory: #ef717a;
+$color-flory-active: #e7515a;
+
+$color-atlantis: #a5c63b;
+$color-atlantis-active: #88b024;
+
+$color-persian-pink: #f47cc3;
+$color-persian-pink-active: #ee5cac;
+
+$color-nutmeg: #79302a;
+$color-nutmeg-active: #591c18;
+
+$color-donkey-brown: #a38671;
+$color-donkey-brown-active: #856651;
+
+$color-perano: #b8c9f1;
+$color-perano-active: #9eb3ea;
+
+$color-kashmir-blue: #5065a1;
+$color-kashmir-blue-active: #344683;
+
+$color-red-orange: #fd4122;
+$color-red-orange-active: #ca341b;
+
+$color-vida-loca: #53b427;
+$color-vida-loca-active: #42901f;
+
+$color-bettercup: #f3aa0d;
+$color-bettercup-active: #c2880a;
+
+$color-denim: #128adb;
+$color-denim-active: #0e6eaf;
+
+$color-azure-radiance: #007AFF;
+$color-azure-radiance-active: #0061cc;
+
+$header-link-primary-color: $color-primary !default;
+$features-icon-primary-color: $color-primary !default;
+
+$color-endeavour: #00579b !default;
+$color-endeavour-active: darken($color-endeavour, 6%) !default;
+
+$text-color: #000 !default;
+$text-color-light: #888 !default;
+
+$btn-default-color: #888 !default;
+$btn-default-border-color: #d9d9d9 !default;
+$btn-default-outline-hover-color: $color-primary !default;
+$btn-primary-outline-hover-border-color: #d191c7 !default;
+
+$btn-success-bg-color: $color-success;
+$btn-success-hover-bg-color: $color-success-hover;
+$btn-success-active-bg-color: $color-success-active;
+$btn-success-color: #fff;
+
+$btn-info-bg-color: $color-info;
+$btn-info-hover-bg-color: $color-info-hover;
+$btn-info-active-bg-color: $color-info-active;
+$btn-info-color: #fff;
+
+$btn-warning-bg-color: $color-warning;
+$btn-warning-hover-bg-color: $color-warning-hover;
+$btn-warning-active-bg-color: $color-warning-active;
+$btn-warning-color: #fff;
+
+$btn-danger-bg-color: $color-danger;
+$btn-danger-hover-bg-color: $color-danger-hover;
+$btn-danger-active-bg-color: $color-danger-active;
+$btn-danger-color: #fff;
+
+$table-border-color: #d5dae6;
+$table-nth-of-type-odd-bg-color: #f1f4f7;
+
+$form-control-input-border-color: rgba(153, 153, 153, 0.5);
+$form-control-border-color-focus: rgba(153, 153, 153, 0.8);
+$nav-tabs-border-color: #e6e6e6;

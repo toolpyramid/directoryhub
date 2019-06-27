@@ -1,0 +1,71 @@
+.contact-default {
+  height: 812px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__map {
+    height: 812px;
+    flex: 1;
+  }
+
+  &__form {
+    height: 100%;
+    flex: 1;
+    padding: 60px;
+    background: rgba(#2f2929, .95);
+    cursor: default;
+    color: #fff;
+
+    .form-control {
+      padding: .6rem 1rem;
+      font-size: 15px;
+    }
+
+    .btn {
+      font-family: $font-name;
+      font-size: 20px;
+      padding: .65rem 1.75rem .55rem 1.75rem;
+    }
+  }
+
+  &__form-heading {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  &__form-info {
+    margin-top: 60px;
+    font-size: 15px;
+
+    .row {
+      + .row {
+        margin-top: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-default,
+  .contact-default__map {
+    height: 970px;
+  }
+}
+
+@media (max-width: 788px) {
+  .contact-default {
+    height: auto;
+    flex-direction: column;
+
+    &__map {
+      height: 400px;
+    }
+
+    &__map,
+    &__form {
+      position: static;
+      width: 100%;
+    }
+  }
+}

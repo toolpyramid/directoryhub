@@ -1,0 +1,117 @@
+.pricing-default {
+  background-color: #ebeff3;
+  padding: 50px 50px 30px 50px;
+
+  &__item {
+    max-width: 370px;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &--free {
+      .pricing-default__item-heading {
+        background: #1bbc9d;
+      }
+    }
+
+    &--gold {
+      .pricing-default__item-heading {
+        background: #3598dc;
+      }
+    }
+
+    &--platinum {
+      .pricing-default__item-heading {
+        background: #8f44ad;
+      }
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 37px;
+  }
+
+  &__description {
+    font-size: 24px;
+    text-align: center;
+    color: $text-color-light;
+    margin-bottom: 45px;
+    max-width: 943px;
+  }
+
+  &__item-heading {
+    padding: 13px 18px 18px 18px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #fff;
+
+    .name {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      font-size: 40px;
+      font-family: $font-name;
+      font-weight: 300;
+      line-height: 40px;
+    }
+  }
+
+  &__item-body {
+    padding: 30px;
+    font-size: 17px;
+
+    hr {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      + li {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &__item-signup {
+    padding: 7px 13px;
+    font-size: 20px;
+    font-family: $font-name;
+  }
+}
+
+@media (max-width: 991px) {
+  .pricing-default {
+    &__items {
+      [class*="col-"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__item {
+      width: 370px;
+    }
+  }
+}
+
+@include mq(phablet, max) {
+  .pricing-default {
+    &__heading {
+      font-size: 30px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+
+    &__item {
+      width: 280px;
+    }
+  }
+}

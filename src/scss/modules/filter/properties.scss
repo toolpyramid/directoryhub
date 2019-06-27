@@ -1,0 +1,68 @@
+.filter-properties {
+  background-color: #f1f4f7;
+  padding: 45px 0 50px 0;
+
+  .row {
+    + .row {
+      margin-top: 30px;
+    }
+  }
+
+  &__heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .select2-container--default {
+    .select2-selection--single {
+      border: none;
+      color: #000;
+      font-size: 17px;
+      height: 45px;
+    }
+
+    .select2-selection__rendered {
+      line-height: 45px;
+    }
+
+    .select2-selection__arrow {
+      height: 45px;
+    }
+  }
+
+  &__search-btn {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 11.5px;
+  }
+
+  &__price-range {
+    height: 17px;
+    color: #000000;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 17px;
+    text-align: center;
+  }
+
+  .noUi-connect {
+    background-color: #0698ff;
+  }
+}
+
+@include mq(screen-lg, max) {
+  .filter-properties {
+    .select2-container--default {
+      margin-bottom: 30px;
+    }
+
+    &__search-btn {
+      margin-top: 30px;
+    }
+  }
+}

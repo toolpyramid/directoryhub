@@ -1,0 +1,54 @@
+.how-it-works-default {
+  padding: 71px 0 84px 0;
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item-point {
+    width: 57px;
+    height: 57px;
+    background-color: $color-primary;
+    border-radius: 57px;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: $font-name;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  &__item-title {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
+  &__item-description {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__btn {
+    color: $color-primary;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    border-width: 3px;
+    margin-top: 50px;
+  }
+}

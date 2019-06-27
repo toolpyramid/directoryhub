@@ -1,0 +1,27 @@
+.footer-default--properties {
+  background-color: #2a2c32;
+  padding: 34px 0 20px 0;
+  font-size: 17px;
+  color: rgba(#fff, .5);
+
+  .footer-default__heading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .footer-default__copyright,
+  .footer-default__follow-us-text {
+    font-size: 17px;
+    color: rgba(#fff, .5);
+  }
+
+  hr {
+    margin: 12px 0 20px 0;
+  }
+
+  li {
+    + li {
+      margin-top: 8px;
+    }
+  }
+}

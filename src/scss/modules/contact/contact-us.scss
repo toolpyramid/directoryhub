@@ -1,0 +1,61 @@
+.contact-us {
+  background-color: #2a2c32;
+  min-height: 146px;
+  color: #fff;
+  padding: 42px 0;
+
+  &__heading {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 17px;
+    color: #999999;
+  }
+
+  &__button {
+    font-size: 19px;
+    line-height: 19px;
+    padding: 10px 20px;
+    background-color: #038ed3;
+    color: #fff;
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__phone {
+    margin-top: 12px;
+    padding-right: 4px;
+    font-size: 17px;
+
+    span {
+      color: #999;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .contact-us {
+    text-align: center;
+
+    &__description {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include mq(phablet, max) {
+  .contact-us {
+    &__heading {
+      font-size: 24px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+  }
+}

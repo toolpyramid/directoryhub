@@ -1,0 +1,676 @@
+.listings-booking-flight {
+  min-height: 875px;
+  background: #fff url("../images/hero/sky.png") top center no-repeat;
+  padding-top: 86px;
+  padding-bottom: 70px;
+
+  .dropdown-menu {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: #fff;
+    padding: 0;
+  }
+
+  .radio-group-toggle {
+    label {
+      &:first-of-type {
+        border-radius: 3px 0 0 3px;
+      }
+
+      &:last-of-type {
+        border-radius: 0 3px 3px 0;
+      }
+    }
+  }
+
+  &__heading {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: $text-font-name;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__payment {
+    text-align: center;
+  }
+
+  &__payment-heading {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  &__payment-methods {
+    img {
+      height: 41px;
+      display: inline-block;
+
+      + img {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &__directions {
+    padding-top: 56px;
+
+    + .listings-booking-flight__directions {
+      padding-top: 0;
+      margin-top: 15px;
+    }
+  }
+
+  &__direction {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    position: relative;
+    margin-right: -15px;
+    margin-bottom: 15px;
+  }
+
+  &__directions {
+    [class*="col-"]:last-child {
+      .listings-booking-flight__direction {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__direction-header,
+  &__direction-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+
+  &__direction-footer {
+    top: auto;
+    bottom: 0;
+  }
+
+  &__direction,
+  &__direction-image,
+  &__company {
+    height: 285px;
+    border-radius: 3px;
+  }
+
+  &__direction-flag {
+    height: 40px;
+    position: relative;
+    top: 2px;
+  }
+
+  &__direction-buy-link {
+    width: 90px;
+    height: 39px;
+    border-radius: 2px;
+    border: 1px solid rgba(#fff, .5);
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+    position: relative;
+    top: 3px;
+
+    &:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+
+  &__direction-country {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__direction-pricing {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+
+    .amount {
+      line-height: 28px;
+      color: #fffc00;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &__direction--company {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &__direction--company-logo {
+    margin-top: 10px;
+  }
+
+  &__direction--company-s7 {
+    background: #ea2840;
+  }
+
+  &__direction--company-qatar {
+    background: #630040;
+
+    .listings-booking-flight__direction--company-logo {
+      margin-top: 30px;
+    }
+  }
+
+  &__direction--company-klm {
+    background: #0073b4;
+
+    .listings-booking-flight__direction--company-logo {
+      margin-top: 20px;
+    }
+  }
+
+  &__direction-location {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  &__direction-location-price {
+    margin-top: 8px;
+  }
+
+  &__direction-location--separator {
+    font-size: 42px;
+    line-height: 18px;
+    position: relative;
+    top: 6px;
+  }
+
+  &__direction--company-qatar {
+    .listings-booking-flight__direction-location {
+      margin-top: 70px;
+    }
+  }
+
+  &__direction--company-klm {
+    .listings-booking-flight__direction-location {
+      margin-top: 50px;
+    }
+  }
+  
+  &__search {
+    display: flex;
+    margin-bottom: 45px;
+    height: 56px;
+    background: #fff;
+    border-radius: 3px;
+
+    .form-control {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      font-size: 20px;
+      line-height: 20px;
+      color: #222;
+      padding: 14px 16px;
+      font-weight: 300;
+      height: 56px;
+
+      &:focus {
+        z-index: 2;
+        box-shadow: 0 0 0 1px #007aff;
+      }
+    }
+  }
+  
+  &__search-directions-flip,
+  &__search-date {
+    border-left: 1px solid rgba(#000, .09);
+    border-right: 1px solid rgba(#000, .09);
+    background: #fff;
+    height: 56px;
+  }
+
+  &__search-directions-flip {
+    width: 65px;
+    font-size: 36px;
+    line-height: 30px;
+    color: #c7c7cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      position: relative;
+      top: 5px;
+    }
+  }
+  
+  &__search-direction-from-input,
+  &__search-direction-to-input {
+    display: flex;
+    position: relative;
+
+    .form-control {
+      padding-right: 66px;
+    }
+  }
+  
+  &__search-direction-from-input {
+    .form-control {
+      border-radius: 3px 0 0 3px;
+    }
+  }
+  
+  &__search-direction-iata {
+    position: absolute;
+    font-size: 14px;
+    line-height: 14px;
+    top: calc(50% - 5px);
+    right: 16px;
+    color: #888;
+  }
+  
+  &__search-passengers-dropdown-toggle {
+    width: 180px;
+    padding: 7px 16px;
+    background: #fff;
+    border-radius: 0;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      font-family: $iconfont-font-name;
+      content: "\68";
+      border: none;
+      vertical-align: baseline;
+      font-size: 10px;
+      top: calc(50% - 5px);
+      font-weight: bold;
+      right: 26px;
+      color: #c7c7cc;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+    }
+  }
+  
+  &__search-passengers-flight-type {
+    font-size: 13px;
+    color: #888;
+    margin-top: 4px;
+    margin-bottom: 1px;
+  }
+  
+  &__search-date {
+    width: 240px;
+  }
+  
+  &__search-date-input {
+    .iconfont-right {
+      color: #c7c7cc;
+      top: calc(50% - 11px);
+      right: 16px;
+    }
+  }
+  
+  &__search-button {
+    border-radius: 0 3px 3px 0;
+    font-size: 22px;
+    height: 56px;
+  }
+  
+  &__search-direction-dropdown {
+    width: 629px;
+  }
+  
+  &__search-direction-dropdown-group {
+    display: flex;
+    color: #888;
+
+    + .listings-booking-flight__search-direction-dropdown-group {
+      border-top: 1px solid rgba(#000, .1);
+    }
+
+    .group-location-type {
+      padding: 20px 15px;
+      width: 150px;
+      line-height: 15px;
+    }
+
+    .group-location-items {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .group-location-item {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      padding: 10px 15px;
+      border-left: 1px solid rgba(#000, .1);
+      justify-content: space-between;
+
+      + .group-location-item {
+        border-top: 1px solid rgba(#000, .1);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(#007aff, .1);
+      }
+    }
+
+    .group-location-city-name {
+      font-size: 20px;
+      color: #000;
+      flex-grow: 1;
+    }
+
+    .group-location-country-name {
+      width: 140px;
+    }
+
+    .group-location-iata {
+      width: 46px;
+    }
+  }
+
+  &__search-date-dropdown {
+    width: 472px;
+  }
+
+  &__search-date-dropdown-alternative {
+    padding: 24px 106px;
+    border-bottom: 1px solid rgba(#000, .1);
+  }
+
+  &__search-date-dropdown-daterange {
+    display: flex;
+  }
+
+  &__search-date-dropdown-datepickers {
+    width: 280px;
+    padding: 17px 22px;
+    border-right: 1px solid rgba(#000, .1);
+  }
+
+  &__search-date-dropdown-months {
+    margin: 10px 0;
+    flex-grow: 1;
+  }
+
+  &__search-date-dropdown-month {
+    font-size: 15px;
+    line-height: 34px;
+    padding: 0 20px;
+
+    &:hover {
+      background: #E6F1FF;
+      cursor: pointer;
+    }
+  }
+
+  &__search-date-dropdown-month-year {
+    font-size: 12px;
+    line-height: 34px;
+    display: inline-block;
+    color: #8e8e93;
+  }
+
+  &__search-passengers-dropdown {
+    width: 357px;
+  }
+
+  &__search-passengers-trip-class {
+    border-top: 1px solid rgba(#000, .1);
+    padding: 19px 69px;
+  }
+
+  &__search-passenger-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    padding: 15px 20px;
+
+    + .listings-booking-flight__search-passenger-type {
+      padding-top: 0;
+    }
+  }
+
+  &__search-passenger-type-amount {
+    margin-left: auto;
+    flex: none;
+    width: 120px;
+
+    .form-control,
+    .btn {
+      height: auto;
+      font-size: 15px;
+      padding: 6.5px;
+      text-align: center;
+    }
+
+    .btn {
+      font-size: 11px;
+      line-height: 10px;
+      background: #fff;
+      border-color: #d9d9d9;
+      padding: 6.5px 12px;
+      color: #d9d9d9;
+
+      .iconfont-dash,
+      .iconfont-plus {
+        position: relative;
+        top: 1px;
+      }
+
+      &:hover {
+        border-color: #007aff;
+        color: #007aff;
+        cursor: pointer;
+      }
+    }
+
+    .form-control {
+      color: #000;
+      font-weight: 400;
+      max-width: 50px;
+      border: 1px solid #d9d9d9;
+
+      &::placeholder {
+        color: #000;
+      }
+
+      &:focus {
+        z-index: 3;
+        box-shadow: none;
+        border-color: #007aff;
+      }
+    }
+  }
+}
+
+.booking-flight-page {
+  .kalendae {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    width: 238px;
+
+    .k-calendar,
+    .k-header,
+    .k-days {
+      display: block;
+      width: 100%;
+    }
+
+    .k-days {
+      margin-top: 10px;
+
+      span {
+        width: 34px;
+        height: 34px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        font-size: 15px;
+        color: #000;
+        padding: 0;
+
+        &.k-active {
+          &.k-selected {
+            background: #007AFF;
+          }
+
+          &.k-range {
+            background: #E6F1FF;
+          }
+        }
+
+        &.k-out-of-month {
+          color: rgba(#8e8e93, .7);
+
+          &.k-range {
+            background: rgba(#E6F1FF, .5);
+          }
+        }
+      }
+    }
+
+    .k-title {
+      text-align: left;
+      position: relative;
+      top: 34px;
+    }
+
+    .k-separator,
+    .k-btn-previous-month,
+    .k-btn-next-month {
+      display: none;
+    }
+
+    .k-header {
+      position: relative;
+      top: -20px;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        width: 32px;
+
+        /*&:nth-child(6),
+        &:nth-child(7) {
+          color: #8e8e93;
+        }*/
+      }
+    }
+
+    .k-calendar {
+      &:first-child {
+        padding-bottom: 22px;
+      }
+
+      &:last-child {
+        border-top: 1px solid rgba(#000, .1);
+        padding-top: 22px;
+
+        .k-title {
+          position: static;
+        }
+
+        .k-header {
+          position: static;
+          display: none;
+        }
+      }
+    }
+
+    .k-caption {
+      font-size: 15px;
+      color: #888;
+      margin-left: 7px;
+      display: block;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listings-booking-flight {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    &__search {
+      flex-direction: column;
+      height: auto;
+      background: transparent;
+
+      .form-control {
+        background: #fff;
+      }
+    }
+
+    &__search-directions-flip {
+      display: none;
+    }
+
+    &__search-date,
+    &__search-passengers,
+    &__search-passengers-dropdown-toggle,
+    &__search-date-input,
+    .form-control {
+      width: 100%;
+      border: none;
+      border-radius: 2px;
+    }
+
+    &__search-direction-from,
+    &__search-direction-to,
+    &__search-date,
+    &__search-passengers {
+      margin-bottom: 30px;
+    }
+
+    &__direction {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq(tablet-small, max) {
+  .listings-booking-flight {
+    &__heading {
+      font-size: 30px;
+    }
+  }
+}

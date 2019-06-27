@@ -1,0 +1,44 @@
+.hero-preview {
+  min-height: 500px;
+  position: relative;
+  background: url("../images/hero/job.jpg") top center no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+
+  .navbar {
+    margin-bottom: 108px;
+    margin-top: 20px;
+  }
+
+  .navbar-brand {
+    position: relative;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .brand-colored {
+    color: #ffcd02;
+  }
+
+  .brand-version {
+    position: relative;
+    right: 0;
+    top: -10px;
+    font-size: 13px;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  h6 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 35px;
+  }
+}

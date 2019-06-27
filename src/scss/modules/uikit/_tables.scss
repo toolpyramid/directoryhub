@@ -1,0 +1,40 @@
+/* BEGIN TABLE STYLES */
+.table {
+  th, td {
+    font-size: 0.9333rem;
+    padding: 0.9333rem 1rem 0.6rem 1rem;
+    border-top-color: $table-border-color;
+  }
+
+  thead {
+    th {
+      font-weight: 500;
+      border-bottom-color: $table-border-color;
+    }
+  }
+
+  tbody {
+    + tbody {
+      border-top-color: $table-border-color;
+    }
+  }
+}
+
+.table-bordered {
+  border-color: $table-border-color;
+
+  th, td {
+    border-color: $table-border-color;
+  }
+}
+
+.table-striped {
+  tbody {
+    tr {
+      &:nth-of-type(odd) {
+        background-color: $table-nth-of-type-odd-bg-color;
+      }
+    }
+  }
+}
+/* END TABLE STYLES */

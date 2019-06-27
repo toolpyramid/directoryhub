@@ -1,0 +1,362 @@
+.listing-offers-with-filter {
+  padding: 33px 0 60px 0;
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__heading {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__sort {
+    display: flex;
+    margin: 0;
+    color: #aaaaaa;
+
+    .icon {
+      font-size: 15px;
+      position: relative;
+      top: 3px;
+
+      &.iconfont-map-point-v4 {
+        font-size: 13px;
+        top: 1px;
+      }
+    }
+  }
+
+  &__sort-item {
+    font-size: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  &__sort-item--is-active {
+    color: #000;
+  }
+
+  &__accordion {
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    .card {
+      border: none;
+    }
+
+    .card-header {
+      background-color: #EDEBEB;
+      color: #000000;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+      border: none;
+      padding: 10px 16px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      cursor: pointer;
+      position: relative;
+
+      &:after {
+        content: '\68';
+        font-family: $iconfont-font-name;
+        position: absolute;
+        right: 15px;
+        font-size: 10px;
+        top: calc(50% - 13px);
+        color: #adadad;
+      }
+    }
+
+    .card-block {
+      background-color: #f6f5f5;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      font-size: 15px;
+      padding: 16px;
+
+      .form-control {
+        border-radius: 2px;
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+        padding: 7px 13px;
+        font-size: 15px;
+        
+        &:placeholder {
+          color: #aaaaaa;
+        }
+      }
+    }
+
+    .custom-control {
+      display: block;
+      margin-bottom: 7px;
+      color: #000;
+      padding-left: 23px;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .custom-control-description {
+      position: relative;
+      top: -1px;
+    }
+
+    .inline-icon-right {
+      .icon {
+        right: 12px !important;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  &__accordion-content-nested {
+    margin-left: 35px;
+  }
+
+  &__clear {
+    color: $color-primary;
+    border-bottom: 1px dashed rgba($color-primary, .5);
+    font-size: 15px;
+    line-height: 15px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__item {
+    border-radius: 4px;
+    background-color: #f6f5f5;
+    margin-bottom: 20px;
+  }
+
+  &__item-user {
+    padding: 20px;
+  }
+
+  &__item-user-wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__item-image {
+    margin-right: 18px;
+    max-height: 100px;
+  }
+
+  &__item-title {
+    color: #0484c1;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    border-bottom: 2px solid #0484c1;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+
+    &:hover {
+      text-decoration: none;
+      color: #ff3b30;
+      border-color: #ff3b30;
+    }
+  }
+
+  &__item-occupation {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+
+  &__item-location {
+    font-size: 15px;
+
+    .icon {
+      position: relative;
+      top: 1px;
+      font-size: 14px;
+    }
+  }
+
+  &__prices {
+    width: 100%;
+
+    th {
+      padding: 5px 20px 10px 20px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    td {
+      padding: 10px 20px;
+      font-size: 15px;
+      color: #000;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    tr {
+      &:nth-child(odd) {
+        td {
+          background: #EDEBEB;
+        }
+      }
+    }
+  }
+
+  &__review-btn {
+    border-width: 2px;
+    color: #0594d0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    .icon {
+      display: inline-block;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+
+    .amount {
+      font-weight: 500;
+    }
+  }
+
+  &__all-services {
+    padding: 10px 20px 20px 20px;
+
+    a {
+      font-size: 15px;
+    }
+
+    small {
+      color: #888;
+      font-size: 13px;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__item--favorite {
+    background-color: #fff7dc;
+
+    .listing-offers-with-filter__prices {
+      tr {
+        &:nth-child(odd) {
+          td {
+            background: #F6EDD3;
+          }
+        }
+      }
+    }
+  }
+
+  &__work-examples {
+    padding: 20px;
+
+    img {
+      max-height: 130px;
+      border-radius: 4px;
+    }
+  }
+
+  &__work-image {
+    position: relative;
+  }
+
+  &__work-image-hover {
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 132, 193, 0.7);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    .icon {
+      height: 47px;
+      font-size: 40px;
+    }
+  }
+
+  &__work-image:hover & {
+    &__work-image-hover {
+      opacity: 1;
+      transition: opacity .15s linear;
+    }
+  }
+
+  &__years {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listing-offers-with-filter {
+    &__aside {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include mq(tablet, max) {
+  .listing-offers-with-filter {
+    &__item-user {
+      flex-direction: column;
+    }
+
+    &__review-btn {
+      margin-top: 20px;
+    }
+
+    &__heading {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    &__controls {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__sort {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+}
+
+@include mq(phone, max) {
+  .listing-offers-with-filter {
+    &__item-user-wrap {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__item-image {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.header-houses {
+  padding: 44px 0 30px 0;
+
+  &__brand,
+  &__brand:hover {
+    font-family: $font-name;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #222;
+    text-transform: uppercase;
+    margin-right: 56px;
+    text-decoration: none;
+
+    .colored {
+      color: $header-link-primary-color;
+    }
+  }
+
+  &__phone {
+    font-size: 21px;
+    color: #000;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+
+    .icon {
+      position: relative;
+      margin-right: 2px;
+      font-size: 14px;
+      top: -1px;
+      color: $color-primary;
+    }
+  }
+
+  &__call-btn {
+    padding: 5px 20px;
+    font-size: 19px;
+  }
+}
+
+@include mq(screen-lg, max) {
+  .header-houses {
+    &__brand-wrap {
+      justify-content: center;
+    }
+
+    &__brand,
+    &__brand:hover {
+      margin: 0;
+    }
+
+    &__callback {
+      margin-top: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
+
+@include mq(tablet, max) {
+  .header-houses {
+    &__callback {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+
+    &__phone {
+      margin: 0;
+    }
+
+    &__call-btn {
+      margin-top: 15px;
+    }
+  }
+}

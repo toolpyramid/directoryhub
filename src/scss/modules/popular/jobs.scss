@@ -1,0 +1,65 @@
+.popular-jobs {
+  padding: 51px 0 80px 0;
+  background-color: #f6f5f5;
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  &__item-image {
+    border-radius: 3px;
+  }
+
+  &__item-title {
+    display: block;
+    padding: 13px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 28px;
+    background: rgba(#61555b, .9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &--electronic-repair {
+      background: rgba(#775c57, .9);
+    }
+
+    &--construction-works {
+      background: rgba(#958a8a, .9);
+    }
+
+    &--repair-of-equipment {
+      background: rgba(#796256, .9);
+    }
+
+    &--cleaning {
+      background: rgba(#246e65, .9);
+    }
+
+    &--planning-and-design {
+      background: rgba(#837758, .9);
+    }
+
+    &--repair-house {
+      background: rgba(#61555b, .9);
+    }
+
+    &--laying-tiles {
+      background: rgba(#866a5b, .9);
+    }
+  }
+}

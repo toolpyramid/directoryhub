@@ -1,0 +1,38 @@
+.footer-default--booking {
+  border-top: 1px solid rgba(#000, .1);
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 34px 0 20px 0;
+  font-size: 17px;
+  color: #888888;
+
+  a {
+    color: #888;
+
+    &:hover {
+      color: #222;
+    }
+  }
+
+  .footer-default__heading {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+  }
+
+  .footer-default__copyright,
+  .footer-default__follow-us-text {
+    font-size: 17px;
+    color: #888888;
+  }
+
+  hr {
+    margin: 12px 0 20px 0;
+  }
+
+  li {
+    + li {
+      margin-top: 8px;
+    }
+  }
+}

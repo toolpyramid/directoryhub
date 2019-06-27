@@ -1,0 +1,76 @@
+.hero-leave-request {
+  min-height: 400px;
+  position: relative;
+  background: url("../images/master/hero-leave-request.png") top center no-repeat;
+  background-size: cover;
+  padding-top: 74px;
+  padding-bottom: 80px;
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 67px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  &__offer-description {
+    font-size: 17px;
+    line-height: 17px;
+    margin-left: 30px;
+    color: rgba(#000, .65);
+    font-style: italic;
+  }
+
+  &__post-job-btn {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-color: $color-primary-light;
+    background: $color-primary-light;
+
+    &:hover {
+      border-color: $color-primary-light-hover;
+      background: $color-primary-light-hover;
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include mq(phablet, max) {
+  .hero-leave-request {
+    &__heading {
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 17px;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    &__btn-wrap {
+      flex-direction: column;
+    }
+
+    &__offer-description {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}

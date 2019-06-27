@@ -1,0 +1,17 @@
+{% extends 'html/base.html' %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block body %}
+
+{% include "html/header/default.html" %}
+{% include "html/job-overview/default.html" %}
+{% include "html/footer/default.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+{% endblock %}

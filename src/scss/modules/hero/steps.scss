@@ -1,0 +1,66 @@
+.hero-steps {
+  min-height: 500px;
+  background: url("../images/hero/man-with-phone.png") top center no-repeat;
+  background-size: cover;
+  padding: 118px 0;
+  color: #fff;
+
+  &-heading {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 73px;
+    text-align: center;
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 1px;
+      background: #fff;
+      position: relative;
+      top: -14px;
+    }
+
+    &:before {
+      margin-right: 15px;
+    }
+
+    &:after {
+      margin-left: 15px;
+    }
+  }
+
+  &-item {
+    &--wrap {
+      display: flex;
+      margin-bottom: 22px;
+    }
+
+    &-point {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: #1b1616;
+      line-height: 31px;
+      padding: 9px;
+      font-size: 31px;
+      text-align: center;
+      background: #fff;
+      margin-right: 20px;
+      font-weight: 400;
+    }
+
+    &-title {
+      font-size: 26px;
+      font-weight: 500;
+      margin-top: -8px;
+    }
+
+    &-text {
+      font-size: 17px;
+      line-height: 26px;
+      font-weight: 300;
+    }
+  }
+}

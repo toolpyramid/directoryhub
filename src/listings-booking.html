@@ -1,0 +1,25 @@
+{% extends 'html/base.html' %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="vendors/kalendae/kalendae.css">
+<link rel="stylesheet" type="text/css" href="vendors/jquery-flexdatalist/jquery.flexdatalist.min.css">
+<link rel="stylesheet" type="text/css" href="css/vendors/jquery-flexdatalist/jquery.flexdatalist.min.css">
+{% endblock %}
+
+{% block body_classes %}booking-page{% endblock %}
+
+{% block body %}
+
+{% include "html/header/booking.html" %}
+{% include "html/listings/booking.html" %}
+{% include "html/footer/booking.html" %}
+
+{% endblock %}
+
+{% block javascripts %}
+{{ super() }}
+<script src="vendors/kalendae/kalendae.standalone.min.js"></script>
+<script src="js/booking.js"></script>
+{% endblock %}
+

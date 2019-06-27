@@ -1,0 +1,30 @@
+<div class="hero-job">
+    <div class="container">
+        <h3 class="hero-job__heading">Find Job</h3>
+        <form class="hero-job__search-form">
+            <div class="hero-job__search-form-title form-control-inline-icon inline-icon-right">
+                <span class="icon iconfont-clock iconfont-right"></span>
+                <input type="text" class="form-control" placeholder="job, title, keywords">
+            </div>
+            <div class="hero-job__search-form-location form-control-inline-icon inline-icon-right">
+                <span class="icon iconfont-world iconfont-right"></span>
+                <input type="text"
+                       class="form-control flexdatalist flexdatalist"
+                       placeholder="city, province or region"
+                       data-data="data/countries.json"
+                       data-search-in="name"
+                       data-min-length="1"
+                       name="dm_country_name_suggestion">
+            </div>
+            <button type="button" class="btn btn-primary hero-job__search-form-btn">
+                <span class="icon iconfont-search-v2"></span>
+            </button>
+        </form>
+        <p class="hero-job__browse">
+            Or browse job offers by <a href="all-categories.html" class="hero-job__browse-category">category</a>
+        </p>
+        <div class="hero-job__extra-info">
+            We have <span class="extra-info__amount">9624</span> job offers
+        </div>
+    </div>
+</div>

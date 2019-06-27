@@ -1,0 +1,231 @@
+.badge {
+  padding: .6rem .8rem;
+  font-size: 1.067rem;
+  font-weight: normal;
+  border-radius: $border-radius;
+}
+
+.badge-pill {
+  padding: .6rem .8rem;
+  border-radius: 10rem;
+}
+
+.badge-sm {
+  padding: .4rem .5rem .478rem .5rem;
+  font-size: .933rem;
+  line-height: .933rem;
+
+  &.badge-pill {
+    padding: .478rem .867rem .478rem .867rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .badge {
+    font-size: 75%;
+  }
+}
+
+.badge-default {
+  background-color: $color-secondary;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-secondary-active;
+    }
+  }
+}
+
+[class*="badge-outline-"] {
+  color: $text-color;
+}
+
+.badge-outline-default {
+  border: 1px solid $color-secondary;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-secondary-active;
+    }
+  }
+}
+
+.badge-primary {
+  background-color: $color-primary;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-primary-active;
+    }
+  }
+}
+
+.badge-outline-primary {
+  border: 1px solid $color-primary;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-primary-active;
+    }
+  }
+}
+
+.badge-success {
+  background-color: $color-success;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-success-active;
+    }
+  }
+}
+
+.badge-outline-success {
+  border: 1px solid $color-success;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-success-active;
+    }
+  }
+}
+
+.badge-info {
+  background-color: $color-info;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-info-active;
+    }
+  }
+}
+
+.badge-outline-info {
+  border: 1px solid $color-info;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-info-active;
+    }
+  }
+}
+
+.badge-warning {
+  background-color: $color-warning;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-warning-active;
+    }
+  }
+}
+
+.badge-outline-warning {
+  border: 1px solid $color-warning;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-warning-active;
+    }
+  }
+}
+
+.badge-danger {
+  background-color: $color-danger;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-danger-active;
+    }
+  }
+}
+
+.badge-outline-danger {
+  border: 1px solid $color-danger;
+
+  &[href] {
+    &:focus, &:hover {
+      border: 1px solid $color-danger-active;
+    }
+  }
+}
+
+.badge-shamrock {
+  background-color: $color-shamrock;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-shamrock-active;
+    }
+  }
+}
+
+.badge-mountain-meadow {
+  background-color: $color-mountain-meadow;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-mountain-meadow-active;
+    }
+  }
+}
+
+.badge-cannibar {
+  background-color: $color-cinnabar;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-cinnabar-active;
+    }
+  }
+}
+
+.badge-red-orange {
+  background-color: $color-red-orange;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-red-orange-active;
+    }
+  }
+}
+
+.badge-vida-loca {
+  background-color: $color-vida-loca;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-vida-loca-active;
+    }
+  }
+}
+
+.badge-bettercup {
+  background-color: $color-bettercup;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-bettercup-active;
+    }
+  }
+}
+
+.badge-denim {
+  background-color: $color-denim;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-denim-active;
+    }
+  }
+}
+
+.badge-curious-blue {
+  background-color: $color-curious-blue;
+
+  &[href] {
+    &:focus, &:hover {
+      background-color: $color-curious-blue-active;
+    }
+  }
+}

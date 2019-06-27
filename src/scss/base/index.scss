@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Header / .header-default
+3. Header Menu / .header-default__menu
+4. Features / .features-default
+5. Categories / .categories-default
+6. Testimonials / .testimonials-default
+7. Pricing / .pricing-default
+8. News from blog / .news-latest-from-blog
+9. Contact Us / .contact-us
+10. Recent Jobs / .listing-recent-jobs
+11. Statistics / .stats-default
+12. Partners / .partners-default
+13. Footer / .footer-default
+
+*------------------------------------------------------------------
+# [Color codes]
+
+# Black (text): #000
+# Black (headings, links) #000
+# Border color #d9d9d9
+# Gray #888
+# Primary #a3238e
+# Secondary #acb5ca
+# Info #4ec2e7
+# Success #82c250
+# Warning #f5ba42
+# Danger #ed5f55
+
+*------------------------------------------------------------------
+[Typography]
+
+Body:		17px Open Sans;
+Headers:		CircularStd;
+Input, textarea:	Open Sans;
+Sidebar heading:	Open Sans;
+*/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    max-width: 100%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

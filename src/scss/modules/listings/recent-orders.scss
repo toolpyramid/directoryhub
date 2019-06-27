@@ -1,0 +1,79 @@
+.listing-recent-orders {
+  padding: 70px 0;
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    border-radius: 4px;
+    background-color: #f6f5f5;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    &--favorite {
+      background: #fff7dc;
+    }
+  }
+
+  &__offers-amount,
+  &__created-at {
+    display: block;
+    min-width: 100px;
+    padding-left: 15px;
+  }
+
+  &__offers-amount {
+    font-size: 16px;
+  }
+  
+  &__created-at {
+    font-size: 13px;
+    color: #888;
+    margin-top: 2px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: #ff9500;
+    font-size: 20px;
+    margin-right: 12px;
+    position: relative;
+    top: 5px;
+  }
+
+  &__title {
+    color: #0484c1;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+
+    &:hover {
+      text-decoration: none;
+      color: #ff3b30;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  &__show-all-btn {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 17px 40px;
+    margin-top: 40px;
+  }
+}

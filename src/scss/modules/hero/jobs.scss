@@ -1,0 +1,101 @@
+.hero-jobs {
+  min-height: 364px;
+  background: url("../images/hero/man-with-phone.png") top center no-repeat;
+  background-size: cover;
+  padding: 40px 0 60px 0;
+
+  label {
+    color: #fff;
+  }
+
+  .form-control {
+    border: none;
+    padding: .675rem 1rem;
+    color: #000;
+
+    &:focus {
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .select2-container--default {
+    .select2-selection--single {
+      height: 47px;
+
+      .select2-selection__arrow {
+        height: 47px;
+      }
+
+      .select2-selection__rendered {
+        line-height: 47px;
+      }
+    }
+  }
+
+  &__header {
+    color: #fff;
+  }
+
+  &__heading {
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
+
+  &__heading-level-two {
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  &__filter-search-button {
+    position: relative;
+    margin-top: 34px;
+    padding: .5rem 1.75rem .65rem 1.75rem
+  }
+
+  &__filter-price-range-slider {
+    position: absolute;
+    bottom: 38px;
+    width: calc(100% - 30px);
+
+    &.range-slider-default-shadow {
+      background-color: #f1f4f7;
+    }
+
+    .noUi-connect {
+      background-color: #0698ff;
+    }
+  }
+
+  .listings-filter-map-price {
+    &--from-group {
+      margin-right: -15px;
+    }
+
+    &--to-group {
+      margin-left: -15px;
+    }
+  }
+}
+
+
+@include mq(screen-lg, max) {
+  .hero-jobs {
+    .listings-filter-map-price {
+      &--from-group {
+        margin-right: 0;
+      }
+
+      &--to-group {
+        margin-left: 0;
+      }
+    }
+
+    &__filter-price-range-slider {
+      position: static;
+      margin: 0;
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.listings-resumes {
+  padding: 50px 0;
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    border-top: 1px solid rgba(#000, .05);
+    padding-top: 30px;
+    display: flex;
+
+    &:last-child {
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(#000, .05);
+    }
+
+    + .listings-resumes__item {
+      margin-top: 30px;
+    }
+  }
+
+  &__item-content {
+    display: flex;
+    flex: 1;
+  }
+
+  &__item-avatar {
+    border-radius: 2px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__item-user-name {
+    margin-bottom: 10px;
+
+    a {
+      font-size: 15px;
+      color: #000;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: #000;
+        text-decoration: none;
+        border-bottom-color: #000;
+      }
+    }
+  }
+
+  &__item-user-occupation {
+    margin-bottom: 5px;
+
+    a {
+      font-size: 22px;
+      color: #222;
+      font-weight: 300;
+      font-family: $font-name;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      line-height: 26px;
+
+      &:hover {
+        color: #222;
+        text-decoration: none;
+        border-bottom-color: #222;
+      }
+    }
+  }
+
+  &__item-user-description {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  &__item-user-skills {
+    .badge {
+      font-size: 11px;
+      text-transform: uppercase;
+      background: #888;
+      padding: 8px;
+
+      &:hover {
+        background: #888;
+      }
+
+      + .badge {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__item-extras {
+    background-color: #f1f4f7;
+    border-radius: 2px;
+    padding: 24px;
+    margin: 0;
+    margin-left: 30px;
+    min-width: 271px;
+  }
+
+  &__item-extras-item {
+    font-size: 16px;
+    color: #222222;
+
+    + .listings-resume__item-extras-item {
+      margin-top: 15px;
+    }
+
+    .icon {
+      font-size: 16px;
+      display: inline-block;
+      width: 24px;
+      position: relative;
+      top: 2px;
+    }
+
+    .iconfont-map-point {
+      font-size: 18px;
+      left: -1px;
+    }
+
+    a {
+      color: #222;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: #222;
+        text-decoration: none;
+        border-bottom-color: #222;
+      }
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listings-resumes {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item-extras {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+}
+
+@include mq(phone-wide, max) {
+  .listings-resumes {
+    &__item-content {
+      flex-direction: column;
+    }
+
+    &__item-avatar {
+      margin-bottom: 20px;
+    }
+  }
+}

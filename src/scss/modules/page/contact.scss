@@ -1,0 +1,81 @@
+.page-contact {
+  &__map {
+    height: 500px;
+  }
+
+  &__form {
+    padding: 50px 80px;
+
+    .row {
+      + .row {
+        margin-top: 10px;
+      }
+    }
+
+    .form-control {
+      font-size: 20px;
+      line-height: 24px;
+      border-color: transparent;
+      background: #ebeff3;
+      font-weight: 300;
+      padding: 14px 15px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__form-heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 44px;
+  }
+
+  &__form-fields-message {
+    display: inline-block;
+    margin-left: 20px;
+    color: #888;
+    position: relative;
+    top: 4px;
+  }
+
+  &__map-point {
+    width: 370px;
+    height: 140px;
+    background: transparent url(../images/map/popup-point.png) no-repeat;
+    font-size: 15px;
+    padding: 9px 20px 20px 90px;
+    color: #fff;
+    margin-left: -200px;
+    margin-top: -140px;
+    font-family: $text-font-name;
+
+    div {
+      + div {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__map-point-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__map-point-rating {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+
+    img {
+      display: inline-block;
+
+      + img {
+        margin-left: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.agents-default {
+  padding: 45px 0 20px 0;
+
+  &__heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__agent-image {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 1px;
+  }
+
+  &__agent-name {
+    color: #000000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 18px;
+  }
+
+  &__agent-phone,
+  &__agent-email {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 15px;
+
+    .icon {
+      color: rgba(#000, .5);
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+  }
+
+  &__agent-social-links {
+    a {
+      display: inline-block;
+
+      + a {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+

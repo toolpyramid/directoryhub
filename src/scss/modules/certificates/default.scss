@@ -1,0 +1,39 @@
+.certificates {
+  padding: 22px 0 30px 0;
+
+  &__breadcrumb {
+    margin-bottom: 4px;
+    padding-top: 0;
+
+    .breadcrumb-item {
+      color: #939daa;
+
+      &:before {
+        color: #939daa;
+      }
+    }
+
+    a {
+      color: #939daa;
+      font-size: 17px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  &__item {
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

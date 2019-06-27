@@ -1,0 +1,38 @@
+<!-- BEGIN THEME TOGGLER, REMOVE THIS BLOCK IN A PRODUCTION! -->
+<div class="theme-settings">
+    <span id="theme-settings-toggler" class="icon iconfont-settings"></span>
+
+    <h6>Theme Colors</h6>
+
+    <div class="theme-settings__themes">
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--default" data-skin="style" data-color="#a3238e"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--blue" data-skin="style-blue" data-color="#0594d0"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--green" data-skin="style-green" data-color="#1dbf60"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--sunset-orange" data-skin="style-sunset-orange" data-color="#ff4845"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--yellow" data-skin="style-yellow" data-color="#fcb71e"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--purple" data-skin="style-purple" data-color="#9a59b5"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--burning-orange" data-skin="style-burning-orange" data-color="#ff7043"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--pacific-blue" data-skin="style-pacific-blue" data-color="#00acc1"></span>
+        <span class="js-theme-toggler theme-settings__theme theme-settings__theme--red" data-skin="style-red" data-color="#ff2f21"></span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function () {
+        $(document).ready(function () {
+            $('#theme-settings-toggler').on('click', function () {
+                $(this).parent().toggleClass('is-opened');
+            });
+
+            $('.js-theme-toggler').on('click', function () {
+                var skin = $(this).data('skin');
+                var color = $(this).data('color');
+                var head = $("head");
+                var linkElement = "<link rel='stylesheet' href='css/" + skin + ".css' type='text/css' media='screen'>";
+                head.append(linkElement);
+                $('#theme-settings-toggler').css('color', color);
+            });
+        });
+    })(jQuery);
+</script>
+<!-- END THEME TOGGLER, REMOVE THIS BLOCK IN A PRODUCTION! -->

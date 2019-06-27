@@ -1,0 +1,16 @@
+$color-primary: #ff7043;
+$color-primary-hover: darken($color-primary, 3%);
+$color-primary-active: darken($color-primary, 6%);
+
+$color-primary-light: #ff7e56;
+$color-primary-light-hover: darken($color-primary-light, 3%);
+$color-primary-light-active: darken($color-primary-light, 6%);
+
+$btn-primary-outline-hover-border-color: lighten($color-primary, 20%);
+
+@import "settings/index";
+@import "vendors/index";
+@import "base/index";
+@import "layout/index";
+@import "modules/index";
+@import "states/index";

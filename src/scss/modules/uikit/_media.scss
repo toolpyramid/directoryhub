@@ -1,0 +1,19 @@
+.media {
+  > img {
+    margin-right: 1.25rem;
+    border-radius: $border-radius;
+  }
+
+  + .media {
+    margin-top: 2rem;
+  }
+}
+
+.media-body {
+  font-size: 1rem;
+}
+
+.media-header {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <title>DirectoryHub - Multipurpose Directory &amp; Listings HTML Template</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/tether/css/tether.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" type="text/css" href="fonts/circular/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/open-sans/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont/styles.css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    
+
+<link rel="stylesheet" type="text/css" href="vendors/nouislider/nouislider.min.css">
+<link rel="stylesheet" type="text/css" href="css/vendors/nouislider/nouislider.min.css">
+
+
+    <!-- BEGIN THEME STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <!-- END THEME STYLES -->
+</head>
+<!-- BEGIN HEAD -->
+<body class="
+
+houses-page
+">
+
+
+
+<nav class="navbar navbar-toggleable-md navbar-inverse header-simple-dark">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-inverse-bg-inverse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-inverse-bg-inverse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects of houses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photo gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Special offers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="hero-houses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-center">
+                <a class="hero-houses__brand" href="houses.html">Directory<span class="colored">Hub</span></a>
+                <span class="hero-houses__brand-description">Log house – life full of health</span>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end">
+                <div class="hero-houses__callback">
+                    <span class="hero-houses__phone">
+                    <span class="icon iconfont-phone-outline"></span> 8 800 555-55-00
+                </span>
+
+                    <a href="#" class="btn btn-outline-primary hero-houses__call-btn">Сall me back </a>
+                </div>
+            </div>
+        </div>
+
+        <ol class="breadcrumb hero-houses__breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Company name</a></li>
+            <li class="breadcrumb-item"><a href="#">Projects of houses</a></li>
+            <li class="breadcrumb-item active"> Wooden houses</li>
+        </ol>
+
+        <h2 class="hero-houses__heading">Houses made of round logs</h2>
+
+        <div class="hero-houses__description">
+            Regardless of the chosen project, our specialists will help you to maximally individualize the design solution: take into account the features of the site, the terrain and insolation of the premises.
+        </div>
+
+        <div class="hero-houses__sort-by">
+            Sort by
+            <div class="btn-group" role="group" aria-label="Default button group">
+                <button type="button" class="btn btn-outline-secondary">Popularity</button>
+                <button type="button" class="btn btn-outline-secondary active">Price</button>
+                <button type="button" class="btn btn-outline-secondary">Square <span class="hero-houses__sort-by-order">↑</span></button>
+                <button type="button" class="btn btn-outline-secondary">Size</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <form class="sidebar-filter-default">
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Price, $</h6>
+        <div class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-secondary">All</button>
+            <button type="button" class="btn btn-outline-secondary">Inexpensive</button>
+            <button type="button" class="btn btn-outline-secondary active">Elite</button>
+        </div>
+
+        <div id="sidebar-filter-default__price-slider" class="sidebar-filter-default__price-slider range-slider-default-shadow range-slider-default-shadow-sm"></div>
+
+        <div class="sidebar-filter-default__price-inputs">
+            <input type="text" class="form-control" placeholder="from">
+            <span class="sidebar-filter-default__inputs-separator">&ndash;</span>
+            <input type="text" class="form-control" placeholder="to">
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Useful area, m2</h6>
+        <div id="sidebar-filter-default__area-slider" class="sidebar-filter-default__price-slider range-slider-default-shadow range-slider-default-shadow-sm"></div>
+
+        <div class="sidebar-filter-default__price-inputs">
+            <input type="text" class="form-control" placeholder="from">
+            <span class="sidebar-filter-default__inputs-separator">&ndash;</span>
+            <input type="text" class="form-control" placeholder="to">
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Number of storeys</h6>
+        <div class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-secondary">1</button>
+            <button type="button" class="btn btn-outline-secondary">2</button>
+            <button type="button" class="btn btn-outline-secondary active">3</button>
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Bedrooms at least</h6>
+        <div class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-secondary">1</button>
+            <button type="button" class="btn btn-outline-secondary">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+            <button type="button" class="btn btn-outline-secondary">4</button>
+            <button type="button" class="btn btn-outline-secondary active">5</button>
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Bathrooms</h6>
+        <div class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-secondary">1</button>
+            <button type="button" class="btn btn-outline-secondary active">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Size</h6>
+
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">10 x 11,5</span>
+        </label>
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">10 x 11,5</span>
+        </label>
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">10 x 11,5</span>
+        </label>
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">10 x 11,5</span>
+        </label>
+
+        <div>
+            <a href="#" class="sidebar-filter-default__link">Show All</a>
+        </div>
+    </div>
+    <div class="sidebar-filter-default__section">
+        <h6 class="sidebar-filter-default__heading">Additional</h6>
+
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Second light</span>
+        </label>
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" checked>
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Garage</span>
+        </label>
+        <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Balcony</span>
+        </label>
+
+        <div class="d-flex align-items-center sidebar-filter-default__controls">
+            <button type="button" class="btn btn-primary btn-sm">Pick up</button>
+
+            <a href="#" class="sidebar-filter-default__link">Reset filters</a>
+        </div>
+    </div>
+</form>
+        </div>
+        <div class="col-lg-9">
+            <div class="listing-houses">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/01.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/02.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/03.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/04.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/05.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/06.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/07.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/08.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/09.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/10.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/11.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="listing-houses__item">
+                <div class="listing-houses__item-image">
+                    <img src="images/listings/houses/12.png" alt="" class="embed-responsive">
+                    <a href="#" class="listing-houses__item-image-preview">
+                        <span class="icon iconfont-search-v2"></span>
+                    </a>
+                </div>
+                <div class="listing-houses__item-info">
+                    <a href="#" class="listing-houses__item-title">
+                        Forest Fairy Tale
+                    </a>
+                    <div class="listing-houses__item-price">
+                        <span class="listing-houses__item-price-old">$200 000</span>  <span class="listing-houses__item-price-current">$150 900</span>
+                    </div>
+                    <div class="listing-houses__item-size">
+                        193.2 m2 ($820 / 1 m2)
+                    </div>
+                    <a href="#" class="btn btn-outline-primary listing-houses__item-view-link">To order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="listings-pagination d-flex justify-content-center">
+        <ul class="pagination">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">99</a></li>
+        </ul>
+    </nav>
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-simple-light">
+    <div class="container">
+        <nav class="footer-simple-light__nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Projects of houses</a>
+            <a href="#">Company Photo</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contacts</a>
+            <a href="#">News</a>
+            <a href="#">Special offer</a>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div>© Company name, 2027</div>
+                <div>Construction of wooden houses.</div>
+            </div>
+            <div class="col-lg-6 text-lg-center">
+                New York, The best street, 99 building 5, Office 404, Subway: Park West
+            </div>
+            <div class="col-lg-3 text-lg-right">
+                <div>Phone: 8 800 555-55-00</div>
+                <div>Email: mail@site.ru</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/tether/js/tether.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/dropdown.animate.js"></script>
+
+
+
+<script>
+    (function () {
+        $(document).ready(function () {
+            var dropDownToggle = $('.dropdown-toggle');
+
+            $(".navbar-toggler").on("click", function () {
+                $(this).toggleClass("is-active");
+            });
+
+            dropDownToggle.click(function() {
+                var dropdownList = $(this).parent().find('.dropdown-menu');
+                var dropdownOffset = $(this).offset();
+                var offsetLeft = dropdownOffset.left;
+                var dropdownWidth = dropdownList.width() / 2;
+                var docWidth = $(window).width();
+
+                var isDropdownVisible = (offsetLeft + dropdownWidth <= docWidth);
+
+                if (!isDropdownVisible) {
+                    dropdownList.addClass('dropdown-menu-right');
+                } else {
+                    dropdownList.removeClass('dropdown-menu-right');
+                }
+            });
+        });
+    })(jQuery);
+</script>
+
+<script src="vendors/nouislider/nouislider.min.js"></script>
+<script src="vendors/wnumb/wNumb.js"></script>
+<script src="js/houses.js"></script>
+
+
+</body>
+</html>

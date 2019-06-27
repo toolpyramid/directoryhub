@@ -1,0 +1,63 @@
+.hero-places {
+  min-height: 500px;
+  background: url("../images/hero/places.png") top center no-repeat;
+  background-size: cover;
+  padding-top: 117px;
+  padding-bottom: 158px;
+  color: #fff;
+
+  .select2-container--default {
+    font-size: 20px;
+    width: 100% !important; /* Redefine inline styles */
+
+    .select2-selection--single {
+      height: 56px;
+
+      .select2-selection__arrow {
+        height: 52px;
+      }
+
+      .select2-selection__rendered {
+        line-height: 56px;
+      }
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__search-btn {
+    height: 56px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      height: 24px;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .hero-places {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .select2-container--default {
+      margin-bottom: 30px;
+    }
+  }
+}

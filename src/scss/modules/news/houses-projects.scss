@@ -1,0 +1,42 @@
+.news-houses-projects {
+  padding: 40px 0 20px 0;
+  background: #f1f4f7 url("../images/houses/main-bg.png") 50% -100px no-repeat;
+
+  &__heading {
+    color: #222222;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__item-info {
+    background: #ffffff;
+    padding: 12px 20px 16px 20px;
+    min-height: 103px;
+  }
+
+  &__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__item-date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 6px;
+  }
+}
+
+@include mq(screen-lg, max) {
+  &__heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}

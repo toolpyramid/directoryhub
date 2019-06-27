@@ -1,0 +1,214 @@
+html, body {
+  background: #fff;
+  font-family: $text-font-name;
+  font-size: $base-font-size;
+  color: $text-color;
+}
+
+/* BEGIN HEADERS STYLES */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-name;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.667rem;
+}
+
+h3 {
+  font-size: 2.333rem;
+}
+
+h4 {
+  font-size: 1.867rem;
+}
+
+h5 {
+  font-size: 1.533rem;
+}
+
+h6 {
+  font-size: 1.133rem;
+}
+/* END HEADERS STYLES */
+
+
+.bg-faded {
+  background-color: #ecf0f1;
+}
+
+.bg-primary {
+  background-color: $color-primary !important;
+}
+
+.bg-secondary {
+  background-color: $color-secondary !important;
+}
+
+.bg-success {
+  background-color: $color-success !important;
+}
+
+.bg-info {
+  background-color: $color-info !important;
+}
+
+.bg-warning {
+  background-color: $color-warning !important;
+}
+
+.bg-danger {
+  background-color: $color-danger !important;
+}
+
+.bg-inverse {
+  background-color: #2f2929 !important;
+}
+
+a {
+  color: $color-primary;
+
+  &:focus, &:hover {
+    color: $color-primary-active;
+  }
+
+  &.bg-inverse {
+    &:focus, &:hover {
+      background-color: #101112 !important;
+    }
+  }
+
+  &.bg-primary {
+    &:focus, &:hover {
+      background-color: $color-primary-active !important;
+    }
+  }
+
+  &.bg-info {
+    &:focus, &:hover {
+      background-color: $color-info-active !important;
+    }
+  }
+
+  &.bg-success {
+    &:focus, &:hover {
+      background-color: $color-success-active !important;
+    }
+  }
+
+  &.bg-warning {
+    &:focus, &:hover {
+      background-color: $color-warning-active !important;
+    }
+  }
+
+  &.bg-danger {
+    &:focus, &:hover {
+      background-color: $color-danger-active !important;
+    }
+  }
+}
+
+.text-muted {
+  color: $text-color-light !important;
+}
+
+.color-white {
+  color: #fff !important;
+}
+
+.color-black {
+  color: #000 !important;
+}
+
+.color-primary {
+  color: $color-primary !important;
+}
+
+.color-success {
+  color: $color-success !important;
+}
+
+.color-info {
+  color: $color-info !important;
+}
+
+.color-curious-blue {
+  color: $color-curious-blue !important;
+
+  &:focus, &:hover {
+    color: $color-curious-blue-active !important;
+  }
+}
+
+.link-endeavour {
+  color: $color-endeavour;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    border-bottom: 1px solid rgba($color-endeavour, .6);
+    color: $color-endeavour-active;
+  }
+}
+
+.link-underlined {
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid $color-primary;
+  background: transparent;
+  color: $color-primary;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+    border-bottom-color: $color-primary-active;
+    color: $color-primary-active;
+  }
+
+  &--dashed {
+    border-bottom-style: dashed;
+  }
+
+  &--endeavour {
+    color: $color-endeavour;
+    border-bottom-color: $color-endeavour;
+
+    &:focus,
+    &:hover {
+      border-bottom-color: $color-endeavour-active;
+      color: $color-endeavour-active;
+    }
+  }
+}
+
+.lead {
+  font-size: 1.067rem;
+}
+
+.blockquote {
+  font-size: 1.133rem;
+
+  &:not(.blockquote-reverse) {
+    border-left: 0.2rem solid $color-primary;
+  }
+
+  &-reverse {
+    border-right: 0.2rem solid $color-primary;
+  }
+
+  &-footer {
+    margin-top: .825rem;
+    font-size: 1rem;
+  }
+}
+
+.text-light {
+  color: #999 !important;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "directoryhub",
+  "version": "1.0.0",
+  "description": "DirectoryHub - Multipurpose Directory and Listing HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ThemesAnytime",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-connect": "^3.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-html": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-append": "^0.1.6",
+    "gulp-sass": "^2.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "webpack": "^2.2.1",
+    "gulp-watch": "^4.3.11",
+    "gulp-typescript": "^3.1.6",
+    "typescript": "^2.3.2",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.1",
+    "underscore": "^1.8.3",
+    "get-gulp-args": "^0.0.1"
+  },
+  "dependencies": {}
+}

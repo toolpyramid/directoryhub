@@ -1,0 +1,160 @@
+.listings-booking {
+  &__heading {
+    color: #222222;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading-see-all {
+    color: #888888;
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+    top: 3px;
+    font-weight: 300;
+
+    &::after {
+      content: '\e004';
+      font-family: $iconfont-font-name;
+      font-size: 12px;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+  &__items {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    + .listings-booking__heading {
+      margin-top: 10px;
+    }
+  }
+
+  &__item {
+    width: 18%;
+    margin-bottom: 30px;
+
+    + .listings-booking__item {
+      margin-left: 20px;
+    }
+  }
+
+  &__item-image {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 1px;
+  }
+
+  &__item-name,
+  &__item-name:hover {
+    color: #000000;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  &__item-rating {
+    margin-top: 5px;
+  }
+
+  &__item-rating-stars {
+    color: $color-primary;
+
+    .icon {
+      display: inline-block;
+      font-size: 21px;
+      line-height: 16px;
+      position: relative;
+      top: 3px;
+      left: -2px;
+    }
+
+    .iconfont-star-outline {
+      font-size: 16px;
+      line-height: 16px;
+      top: 0;
+    }
+  }
+
+  &__item-rating-amount {
+    font-size: 14px;
+    color: #888;
+    margin-left: 6px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+  }
+
+  &__feature-items {
+    margin-top: 25px;
+
+    + .listings-booking__heading {
+      margin-top: 10px;
+    }
+  }
+
+  &__feature {
+    margin-bottom: 30px;
+  }
+
+  &__feature-image {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__feature-name,
+  &__feature-name:hover {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+@include mq(desktop, max) {
+  .listings-booking {
+    &__item-name,
+    &__item-name:hover,
+    &__feature-name,
+    &__feature-name:hover {
+      font-size: 15px;
+    }
+
+    &__item-rating-amount {
+      margin-left: 0;
+    }
+  }
+}
+
+@include mq(screen-lg, max) {
+  .listings-booking {
+    &__items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 30%;
+    }
+  }
+}
+
+@include mq(phablet, max) {
+  .listings-booking {
+    &__item {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &__heading {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

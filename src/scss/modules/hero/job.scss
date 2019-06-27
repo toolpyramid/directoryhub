@@ -1,0 +1,132 @@
+.hero-job {
+  min-height: 500px;
+  position: relative;
+  background: url("../images/hero/job.jpg") top center no-repeat;
+  background-size: cover;
+  padding-top: 115px;
+  padding-bottom: 48px;
+
+  &__heading {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  &__search-form {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .form-control {
+      font-size: 20px;
+      border: none;
+      padding: 1rem 1.133rem;
+      border-radius: 3px;
+      line-height: 1.333rem;
+
+      &:focus {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .form-control-inline-icon {
+      .form-control {
+        padding-right: 45px;
+      }
+
+      .icon {
+        font-size: 20px;
+        right: 15px;
+        width: 20px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  &__search-form-btn {
+    padding: 12px 73px;
+    cursor: pointer;
+    border-radius: 3px;
+    max-width: 175px;
+    margin-bottom: 30px;
+
+    .icon {
+      font-size: 27px;
+      line-height: 27px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__search-form-title,
+  &__search-form-location {
+    flex-grow: 1;
+    max-width: 507px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__browse {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  &__browse-category,
+  &__browse-category:hover {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    padding-bottom: 1px;
+  }
+
+  &__extra-info {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #fff;
+
+    .extra-info {
+      &__amount {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px 10px 7px 10px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+@include mq(tablet-wide, max) {
+  .hero-job {
+    &__search-form {
+      flex-direction: column;
+    }
+
+    &__search-form-title,
+    &__search-form-location,
+    &__search-form-btn {
+      margin-right: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__search-form-btn {
+      justify-content: center;
+    }
+
+    p,
+    &__extra-info {
+      text-align: center;
+    }
+  }
+}
+

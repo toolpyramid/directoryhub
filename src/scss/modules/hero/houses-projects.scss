@@ -1,0 +1,103 @@
+.hero-houses-projects {
+  min-height: 686px;
+  background: url("../images/houses/hero/projects.png") top center no-repeat;
+  background-size: cover;
+  padding: 96px 0 0 0;
+  position: relative;
+
+  &__heading {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 54px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__order-btn {
+    font-size: 19px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__benefits {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 23px 0 40px 0;
+    background-color: rgba(50, 30, 47, 0.5);
+  }
+
+  &__benefits-heading {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+
+  &__benefits-item {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .benefits-item-image {
+      margin-right: 21px;
+    }
+
+    .benefits-item-title {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 2px;
+    }
+
+    .benefits-item-description {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+      color: rgba(#fff, .7);
+    }
+  }
+}
+
+@include mq(desktop, max) {
+  .hero-houses-projects {
+    padding-top: 55px;
+  }
+}
+
+@include mq(screen-lg, max) {
+  .hero-houses-projects {
+    &__heading {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+
+    &__benefits {
+      position: static;
+      margin-top: 50px;
+    }
+
+    &__benefits-item {
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

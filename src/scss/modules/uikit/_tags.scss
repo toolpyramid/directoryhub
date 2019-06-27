@@ -1,0 +1,74 @@
+.tags {
+  padding: 4px;
+  border-radius: $border-radius;
+  background-color: #e2ebf4;
+  display: inline-flex;
+}
+
+.tags-item {
+  color: #fff;
+  padding: 5px 10px;
+  background: $color-primary;
+  border-radius: $border-radius;
+  display: inline-flex;
+  align-items: center;
+
+  + .tags-item {
+    margin-left: 4px;
+  }
+}
+
+.tags-item-text {
+  font-size: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+  order: 1;
+}
+
+.tags-item-close {
+  position: relative;
+  top: 1px;
+  margin-left: 9px;
+  color: #fff;
+  order: 2;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+  }
+}
+
+.tags-sm {
+  .tags-item {
+    padding: 3px 8px;
+  }
+
+  .tags-item-text {
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  .tags-item-close {
+    font-size: 22px;
+    top: 1px;
+  }
+}
+
+.tags-item-secondary {
+  background: $color-secondary;
+}
+
+.tags-item-info {
+  background: $color-info;
+}
+
+.tags-item-success {
+  background: $color-success;
+}
+
+.tags-item-warning {
+  background: $color-warning;
+}
+
+.tags-item-danger {
+  background: $color-danger;
+}

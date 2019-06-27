@@ -1,0 +1,9 @@
+@import "houses";
+
+.leaflet-popup-tip,
+.leaflet-popup-content-wrapper {
+  background: rgba(#222, .9);
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 15px;
+}

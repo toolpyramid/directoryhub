@@ -1,0 +1,25 @@
+@mixin button-outline-bg-transparent(
+  $btn-color,
+  $btn-color-hover,
+  $btn-border-color,
+  $btn-border-color-hover,
+  $btn-font-size,
+  $btn-border-radius: $border-radius,
+  $btn-padding: .85rem 1.75rem .65rem 1.75rem,
+  $btn-font-family: $font-name
+) {
+  background: transparent;
+  border-color: $btn-border-color;
+  color: $btn-color;
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  text-transform: uppercase;
+  border-radius: $btn-border-radius;
+
+  &:hover, &:active {
+    border-color: $btn-border-color-hover;
+    color: $btn-color-hover;
+  }
+
+  padding: $btn-padding;
+}

@@ -1,0 +1,62 @@
+.modal {
+  .close {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $color-primary;
+    color: #fff;
+    position: absolute;
+    opacity: 1;
+    right: -15px;
+    top: -15px;
+
+    &:hover {
+      background: $color-primary-hover;
+    }
+  }
+}
+
+.modal-content {
+  border: none;
+  border-radius: $border-radius * 2;
+}
+
+.modal-header {
+  padding: 15px 15px 12px 15px;
+  border-bottom-color: $card-border-color;
+}
+
+.modal-footer {
+  border-top-color: $card-border-color;
+}
+
+.modal-body-header {
+  margin-bottom: 25px;
+}
+
+.modal-body-single {
+  padding: 30px;
+}
+
+.modal-form {
+  .form-group {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-group {
+    + .form-group {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.modal-controls {
+  margin-top: 34px;
+
+  a {
+    color: #8e8e93;
+    font-weight: 400;
+  }
+}
