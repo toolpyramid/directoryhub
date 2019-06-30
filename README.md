@@ -17,4 +17,4 @@ gulp
 open the **dist** directory
 
 ### Demo
-http://themesanytime.com/directoryhub/
+http://themesanytime.com/products/directoryhub/
