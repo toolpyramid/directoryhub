@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready(function(){e(".listing-offers-with-filter__work-examples-carousel").owlCarousel({loop:!1,margin:10,center:!1,items:6,autoplay:!1,autoplayHoverPause:!0,dots:!1,navigation:!1,responsive:{0:{items:2},400:{items:3},768:{items:4},998:{items:6}}})})}(jQuery);

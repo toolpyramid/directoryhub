@@ -1,0 +1,1 @@
+!function(){"use strict";$(".selectable").each(function(){var e=$(this);e.data("selectable-no-search")?e.select2({minimumResultsForSearch:-1}):e.select2()}),$(".range-datepickers").kalendae({mode:"range",months:2,weekStart:1,useYearNav:!1,titleFormat:"MMMM"})}(jQuery);

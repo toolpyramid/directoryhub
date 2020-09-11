@@ -1,0 +1,1 @@
+!function(){"use strict";$(".selectable").each(function(){var e=$(this);if(e.data("selectable-no-search")){e.data("theme");e.select2({minimumResultsForSearch:-1})}else e.select2()})}(jQuery);

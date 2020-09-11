@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready(function(){e(".master-profile-work-examples__carousel").owlCarousel({loop:!1,margin:14,center:!1,items:5,autoplay:!1,autoplayHoverPause:!0,dots:!1,navigation:!1,responsive:{0:{items:1},400:{items:2},768:{items:3},998:{items:6}}})})}(jQuery);

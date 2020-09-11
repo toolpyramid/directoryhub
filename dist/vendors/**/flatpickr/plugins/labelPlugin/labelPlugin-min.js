@@ -1,0 +1,1 @@
+function labelPlugin(){return function(n){return{onReady:function(){var t=n.input.id;n.config.altInput&&t&&(n.input.removeAttribute("id"),n.altInput.id=t)}}}}"undefined"!=typeof module&&(module.exports=labelPlugin);

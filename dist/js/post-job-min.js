@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready(function(){e("select.selectable").each(function(){var t=e(this);t.data("selectable-no-search")?t.select2({minimumResultsForSearch:-1}):t.select2()})})}(jQuery);

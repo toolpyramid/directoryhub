@@ -1,0 +1,1 @@
+L.HtmlIcon=L.Icon.extend({options:{},initialize:function(n){L.Util.setOptions(this,n)},createIcon:function(){var n=document.createElement("div");return n.innerHTML=this.options.html,n},createShadow:function(){return null}});
