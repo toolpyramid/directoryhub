@@ -1,6 +1,7 @@
 "use strict";
 
-(function() {
+
+(function () {
     var gulp = require('gulp'),
         rename = require('gulp-rename'),
         notify = require('gulp-notify'),
@@ -14,17 +15,19 @@
         consolidate = require('gulp-consolidate'),
         iconfont = require('gulp-iconfont'),
         imagemin = require('gulp-imagemin'),
-        gulpArgs = require('get-gulp-args')()
-    ;
+        minify = require('gulp-minify'),
+        gulpArgs = require('get-gulp-args')();
     var env = gulpArgs.env || 'demo';
 
-    gulp.task('connect', function() {
+    gulp.task('connect', function () {
         connect.server({
             root: 'dist',
-            //livereload: true,
+            // livereload: true,
             port: 8888
         });
     });
+
+
 
     /*gulp.task('typescripts', function () {
         return gulp.src('src/scripts/!**!/!*.ts')
@@ -35,24 +38,21 @@
             .pipe(gulp.dest('./dist/scripts'))
         ;
     });*/
-    
+
     gulp.task('images', function () {
         gulp.src('./src/images/**/*')
             //.pipe(imagemin())
-            .pipe(gulp.dest('./dist/images'))
-        ;
+            .pipe(gulp.dest('./dist/images'));
     });
 
     gulp.task('data', function () {
         gulp.src('./src/data/**/*')
-            .pipe(gulp.dest('./dist/data'))
-        ;
+            .pipe(gulp.dest('./dist/data'));
     });
 
     gulp.task('fonts', function () {
         gulp.src('./src/fonts/**/*')
-            .pipe(gulp.dest('./dist/fonts'))
-        ;
+            .pipe(gulp.dest('./dist/fonts'));
     });
 
     gulp.task('scss', function () {
@@ -60,7 +60,7 @@
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 10'))
             .pipe(gulp.dest('./dist/css'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
@@ -69,9 +69,11 @@
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 10'))
             .pipe(cleanCSS())
-            .pipe(rename({suffix: ".min"}))
+            .pipe(rename({
+                suffix: ".min"
+            }))
             .pipe(gulp.dest('./dist/css'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
@@ -87,7 +89,9 @@
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 10'))
             .pipe(cleanCSS())
-            .pipe(rename({suffix: ".min"}))
+            .pipe(rename({
+                suffix: ".min"
+            }))
             .pipe(gulp.dest('./dist/css/vendors'))
         //.pipe(connect.reload())
         ;
@@ -96,7 +100,7 @@
     gulp.task('js', function () {
         gulp.src('./src/js/**/*.js')
             .pipe(gulp.dest('./dist/js'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
@@ -105,7 +109,7 @@
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 10'))
             .pipe(gulp.dest('./dist/js'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
@@ -114,13 +118,15 @@
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 10'))
             .pipe(cleanCSS())
-            .pipe(rename({suffix: ".min"}))
+            .pipe(rename({
+                suffix: ".min"
+            }))
             .pipe(gulp.dest('./dist/js'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
-    gulp.task('html', function() {
+    gulp.task('html', function () {
         return gulp.src('./src/*.html')
             .pipe(nunjucks({
                 searchPaths: ['./src'],
@@ -129,24 +135,50 @@
                 }
             }))
             .pipe(gulp.dest('dist'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
     gulp.task('vendors', function () {
         gulp.src('./src/vendors/**/*.*')
             .pipe(gulp.dest('./dist/vendors'))
-            //.pipe(connect.reload())
+        //.pipe(connect.reload())
         ;
     });
 
-    gulp.task('watch', function () {
-        gulp.watch('./src/scss/**/*.scss', ['scss', 'scss:minify', 'js:css:source', 'js:css:minify']);
-        gulp.watch('./src/scss/vendors/**/*.scss', ['scss:vendors:source', 'scss:vendors:minify']);
-        gulp.watch('./src/**/*.html', ['html']);
-        gulp.watch('./src/js/**/*.js', ['js']);
+    // gulp.task('watch', function () {
+    //     gulp.watch('./src/scss/**/*.scss', ['scss', 'scss:minify', 'js:css:source', 'js:css:minify']);
+    //     gulp.watch('./src/scss/vendors/**/*.scss', ['scss:vendors:source', 'scss:vendors:minify']);
+    //     gulp.watch('./src/**/*.html', ['html']);
+    //     gulp.watch('./src/js/**/*.js', ['js']);
+    // });
+    gulp.task('compress', function () {
+        gulp.src(['./dist/js/*.js'])
+            .pipe(minify())
+            .pipe(gulp.dest('./dist/js'))
     });
 
-    gulp.task('default', ['connect', 'watch']);
-    gulp.task('prod', ['data', 'images', 'fonts', 'vendors', 'html', 'scss', 'scss:vendors:source', 'scss:vendors:minify', 'scss:minify', 'js', 'js:css:source', 'js:css:minify']);
+    gulp.task('vcompress', function () {
+        gulp.src(['./dist/vendors/**/*.js'])
+            .pipe(minify())
+            .pipe(gulp.dest('./dist/vendors/**'))
+    });
+
+    gulp.task('fcompress', function () {
+        gulp.src(['./dist/fonts/*.css'])
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('./dist/fonts'))
+    });
+
+    gulp.task('start',  gulp.series("connect","compress","fcompress"), async function () {
+        console.log("success");
+    });
+
+
+    gulp.task('default', gulp.series('vcompress'), async function () {
+        console.log("success");
+    });
+    gulp.task('prod', gulp.series('data', 'images', 'fonts', 'vendors', 'html', 'scss', 'scss:vendors:source', 'scss:vendors:minify', 'scss:minify', 'js', 'js:css:source', 'js:css:minify'), async function () {
+        console.log("success");
+    });
 })();

@@ -1,0 +1,1 @@
+!function(){"use strict";$(".selectable").each(function(){var e=$(this);e.data("selectable-no-search")?e.select2({minimumResultsForSearch:-1}):e.select2()})}(jQuery);
