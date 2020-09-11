@@ -161,7 +161,7 @@
     gulp.task('vcompress', function () {
         gulp.src(['./dist/vendors/**/*.js'])
             .pipe(minify())
-            .pipe(gulp.dest('./dist/vendors/**/'))
+            .pipe(gulp.dest('./dist/vendors/**'))
     });
 
     gulp.task('fcompress', function () {
